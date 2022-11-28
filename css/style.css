@@ -1,26 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin-left: 72px;
+    margin-right: 72px;
+    font-family: 'Quicksand', sans-serif;
+}
 
 :root {
-    --brand: #ff4d29;
-    --dark: #092032;
-    --body: #516171;
-    --border: rgba(0,0,0,0.08);
-    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
-    
+    --primary_1: #FFF9E8;
+    --primary_2: #FFE8AA;
+    --primary_3: #FFD669;
+    --primary_4: #BC8B09;
+    --primary_5: #775701;
+
+    --secondary_1: #FDF3EB;
+    --secondary_2: #FFC7B7;
+    --secondary_3: #FF9C82;
+    --secondary_4: #D55634;
+    --secondary_5: #AC3E20;
+
+    --neutral_1: #FBFCFD;
+    --neutral_2: #E3E4E5;
+    --neutral_3: #979C9E;
+    --neutral_4: #6C6062;
+    --neutral_5: #090A0A;
 }
 
 body {
-    font-family: "Barlow", sans-serif;
-    color: var(--body);
-    line-height: 1.7;
+    font-family: "Quicksand", sans-serif;
+    line-height: 0;
 }
 
+.display_1 {
+    font-size: 55px;
+}
+
+.display_2 {
+    font-size: 45px;
+}
+
+.display_3 {
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    font-weight:400;
+}
+
+
+
+/*
 h1,h2,h3,h4,h5,h6,
 .display-1,.display-2,.display-3,.display-4 {
     font-weight: 700;
     color: var(--dark);
 }
+*/
 
+/*
 .bg-cover {
     background-size: cover;
     background-position: center;
@@ -87,8 +149,11 @@ section {
     background-color: var(--brand) !important;
 }
 
+*/
+
 
  /* slide */
+ /*
  .slide {
      min-height: 100vh;
      display: flex;
@@ -115,8 +180,10 @@ section {
     text-transform: uppercase;
     color: #fff;
 }
+*/
 
 /* navbar */
+/*
 .top-nav {
     background-color: var(--brand);
     color: #fff;
@@ -490,3 +557,5 @@ input.form-control {
     box-shadow: none;
     border-color: var(--brand);
 }
+
+*/
