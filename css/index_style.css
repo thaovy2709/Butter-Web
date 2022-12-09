@@ -5,11 +5,12 @@
 }
 
 #header {
+    width: 100%;
     padding-left: 72px;
     padding-right: 72px;
     padding-top: 9px;
     position: relative;
-    height: 170px;
+    height: 150px;
     background-color: white;
     box-shadow: 0 0 25px rgba(126, 126, 126, 0.8);
     position: sticky;
@@ -19,7 +20,7 @@
 }
 
 #header1 {
-    height: 105px;
+    height: 60px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -107,67 +108,7 @@
 
 }
 
-/* CSS FOR DROPDOWN NOTIFICATION */
-
-.notification-label {
-    font-size: 11px;
-    margin-left: 0.7rem;
-    margin-bottom: 0.7rem;
-    text-transform: uppercase;
-    color: var(--primary_gray);
-}
-
-.subnav .notify-section {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    vertical-align: middle;
-}
-
-.notify-section .notify-thumb {
-    color: var(--primary_green);
-    width: 5rem;
-    font-size: 25px;
-    text-align: center;
-}
-
-.notify-section .notify-thumb img {
-    width: 58px;
-    height: 38px;
-}
-
-.notify-text {
-    margin-left: 1rem;
-    flex-grow: 3;
-}
-
-.notify-text h5 {
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.notify-text p {
-    font-size: 12px;
-    font-weight: 300;
-    text-align: justify;
-}
-
-.subnav .more {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    font-size: 11px;
-}
-
-.subnav .more:hover {
-    background-color: #e9ecef;
-    border-radius: 0 0 5px 5px;
-    font-weight: 500;
-}
-/*end of css for noti */
+/* Start of css for account */
 
 #header1 .account {
     /* display: flex; */
@@ -184,17 +125,6 @@
     padding: 8px 0;
     box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
     display: none;
-}
-
-#header1 .subnav::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: 1rem;
-    width: 10px;
-    height: 10px;
-    background-color: #FFFF;
-    transform: rotate(45deg);
 }
 
 #header1 .account:hover .subnav {
@@ -219,7 +149,7 @@
     line-height: 24px;
     display: flex;
     text-decoration: none;
-    color: var(--neutral-4);
+    color: var(--neutral_4);
     align-items: center;
 }
 
@@ -231,15 +161,130 @@
 
 #header1 .account .subnav li:hover {
     font-weight: 700;
-    color: var(--primary_4);
-    background-color: var(--neutral_2);
     transition: 0.2s linear;
 }
+/* End of css for account */
+
+
+/* Start of css for notification */
+
+
+#header1 .notification .subnav {
+    width: 27rem;
+    right: 3rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
+    display: none;
+}
+
+#header1 .subnav::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 1rem;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFF;
+    transform: rotate(45deg);
+}
+
+#header1 .notification:hover .subnav {
+    margin-top: 10px;
+    display: block !important;
+}
+
+/*
+#header1 .notification .subnav {
+    width: 24rem;
+    right: 0;
+    position: relative;
+} */
+
+/*
+#header1 .notification .subnav li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+*/
+
+.notify-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.notify-section .notify-thumb img {
+    width: 56px;
+    height: 56px;
+}
+
+.notify-text {
+    margin-left: 8px;
+}
+
+.notify-section .notify-text span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.notify-text span h6 {
+    font-weight: 700;
+    size: 14px;
+    vertical-align: middle;
+}
+
+.notify-text span p {
+    size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.notify-section p {
+    size: 8px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: justify;
+}
+
+#notification-lable {
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--neutral_3);
+    font-weight: 700;
+}
+
+#header1 .notification .subnav li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--neutral_4);
+    text-decoration: none;
+    margin: 16px;
+    cursor: pointer;
+}
+
+#header1 .notification .subnav li a:hover {
+    color: var(--primary_4);
+    transition: 0.2s linear;
+}
+
+/* End of css for notification */
 
 
 #header2 {
     height: 65px;
-    margin-top: 8px;
+    margin-top: 32px;
     position: relative;
     display: flex;
     align-items: baseline;
@@ -338,9 +383,208 @@
 
 .subnav li:hover {
     background-color: var(--neutral_2);
-}
+    color: var(--primary_4);
+} 
 
 /* footer */
+
+/*banner slider*/
+#slider {
+    position: relative;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    height: 720px;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+/* css for manual slider */
+
+.slider-manual {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    /* width: 800px; */
+    /* margin-top: -40px; */
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    align-items: center;
+    border: 2px solid var(--primary_3);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: var(--primary_3);
+}
+
+#r1:checked~.first {
+    margin-left: 0;
+}
+
+#r2:checked~.first {
+    margin-left: -20%;
+}
+
+#r3:checked~.first {
+    margin-left: -40%;
+}
+
+#r4:checked~.first {
+    margin-left: -60%;
+}
+
+
+/* css for automatic slider */
+
+.slider-auto {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    right: 50%;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.slider-auto div {
+    border: 2px solid var(--primary_3);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.slider-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#r1:checked~.slider-auto .auto-btn1 {
+    background: var(--primary_3);
+}
+
+#r2:checked~.slider-auto .auto-btn2 {
+    background: var(--primary_3);
+}
+
+#r3:checked~.slider-auto .auto-btn3 {
+    background: var(--primary_3);
+}
+
+#r4:checked~.slider-auto .auto-btn4 {
+    background: var(--primary_3);
+}
+
+/*CSS for content*/
+#content {
+    margin: 0 auto;
+}
+/*CSS for content*/
+
+/*Category*/
+
+.category {
+    margin-top: 64px;
+    margin-left: 288px;
+    margin-right: 288px;
+    text-align: center;
+}
+
+.category_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category_item img {
+    width: 120px;
+    height: 120px;
+}
+
+.category_item a {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary_4);
+    size: 22px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.category_item a p {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.category_item a:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+/*Category*/
+
+/* ButterID */
+.butterID {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-left: 64px;
+}
+
+.butterID_text p {
+    color: var(--neutral_3);
+    margin-top: 32px;
+
+}
+
+.butterID_text h2 {
+    color: var(--neutral_3);
+    margin-top: 48px;
+    font-weight: 600;
+}
+
+.butterID_text .btn_design .btn_text {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.butterID_text .btn_design h2 {
+    color: var(--neutral_1);
+}
+
+
+
+
+
+/* ButterID */
+
 /* FOOTER */
 
 .footer-body {
@@ -427,7 +671,7 @@
     margin-bottom: 15px;
     font-family: 'Quicksand';
     border-radius: 20px;
-    color: var(--neutral-4);
+    color: var(--neutral_4);
     font-size: 16px;
     font-weight: 400;
 }
@@ -437,7 +681,7 @@
 }
 
 .form-control::placeholder {
-    color: var(--neutral-4);
+    color: var(--neutral_3);
 }
 
 .form-control-fb {
@@ -457,6 +701,7 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--primary_4);
+    background-color: var(--primary_1);
     border-radius: 20px;
     align-items: center;
 }
@@ -464,6 +709,9 @@
 
 .form-send:hover {
     cursor: pointer;
+    color: var(--neutral_4);
+    background-color: var(--primary_2);
+    
 }
 /* css for content end */
 
