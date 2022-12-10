@@ -1,0 +1,71 @@
+[
+{
+    "image":"./img/ProductList/dailycookie.png",
+    "name":"Daily cookie",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"./img/ProductList/croissant.png",
+    "name":"Croissant",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: cái",
+    "price":"25.000 vnđ"
+},
+{
+    "image":"./img/ProductList/brownsugar.png",
+    "name":"Brownsugar Pop",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: cái",
+    "price":"10.000 vnđ"
+},
+{
+    "image":"./img/ProductList/coldbrewmocha.png",
+    "name":"Cold brew mocha",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: ly",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"./img/ProductList/cookiecoffee.png",
+    "name":"Coffee cookie",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: gram",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"./img/ProductList/cutewormchocolate.png",
+    "name":"Cuteworm choco",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: cái",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"./img/ProductList/cookieoatmeal1.jpg",
+    "name":"Cookie oatmeal",
+    "wishlist":"/img/icon/addtowishlist.svg",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "rating-star":"/img/icon/yellowstar.svg",
+    "unit":"Đơn vị: gram"
+}
+]
