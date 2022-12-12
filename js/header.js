@@ -13,7 +13,7 @@ var pHeader = (function() {
         <img src="/img/shipping.png" alt="shipping" id="shipping_icon">
         <span>
           <h6><b>Giao hàng</b></h6>
-          <p>Trường đại học Kinh tế - Luật</p>
+          <p>Trường Đại học Kinh tế - Luật</p>
         </span>
       </div>
 
