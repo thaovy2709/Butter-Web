@@ -1,71 +1,64 @@
 [
 {
-    "image":"./img/ProductList/dailycookie.png",
-    "name":"Daily cookie",
+    "image":"/img/ProductList/pinkpop1.png",
+    "name":"Pink pop",
     "wishlist":"/img/icon/addtowishlist.svg",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "unit":"Đơn vị: gram",
-    "price":"35.000 vnđ"
+    "unit":"Đơn vị: cái",
+    "price":"10.000 vnđ",
+    "cart": "/img/icon/BagRed.svg",
+    "button":"Đặt mua"
 },
 {
-    "image":"./img/ProductList/croissant.png",
+    "image":"/img/ProductList/greenpop1.png",
     "name":"Croissant",
     "wishlist":"/img/icon/addtowishlist.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "unit":"Đơn vị: cái",
     "price":"25.000 vnđ"
 },
 {
-    "image":"./img/ProductList/brownsugar.png",
+    "image":"/img/ProductList/lollipop1",
     "name":"Brownsugar Pop",
     "wishlist":"/img/icon/addtowishlist.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "unit":"Đơn vị: cái",
     "price":"10.000 vnđ"
 },
 {
-    "image":"./img/ProductList/coldbrewmocha.png",
+    "image":"/img/ProductList/brownsugarpop2.png",
     "name":"Cold brew mocha",
     "wishlist":"/img/icon/addtowishlist.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "unit":"Đơn vị: ly",
     "price":"50.000 vnđ"
 },
 {
-    "image":"./img/ProductList/cookiecoffee.png",
+    "image":"/img/ProductList/mashmallow1.png",
     "name":"Coffee cookie",
     "wishlist":"/img/icon/addtowishlist.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "unit":"Đơn vị: gram",
     "price":"35.000 vnđ"
 },
 {
-    "image":"./img/ProductList/cutewormchocolate.png",
+    "image":"/img/ProductList/silverpop1.png",
     "name":"Cuteworm choco",
     "wishlist":"/img/icon/addtowishlist.svg",
     "rating":4.9,
     "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
+    "ratingStar":"/img/icon/yellowstar.svg",
     "unit":"Đơn vị: cái",
     "price":"45.000 vnđ"
-},
-{
-    "image":"./img/ProductList/cookieoatmeal1.jpg",
-    "name":"Cookie oatmeal",
-    "wishlist":"/img/icon/addtowishlist.svg",
-    "rating":4.9,
-    "stock":"Còn 50 sản phẩm",
-    "rating-star":"/img/icon/yellowstar.svg",
-    "unit":"Đơn vị: gram"
 }
 ]
