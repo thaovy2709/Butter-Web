@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* .now {
+    content: '';
+    position: absolute;
+    color: var(--primary_4) !important;
+} */
 
 #header {
     width: 100%;
@@ -84,10 +89,6 @@
     line-height: 20px;
     color: var(--neutral_4);
     align-items: center;
-    transition: background-color 0.3s ease-in-out;
-}
-input:focus{
-    outline: none;
 }
 
 .search_bar span {
@@ -257,14 +258,16 @@ input:focus{
     font-weight: 500;
     color: var(--neutral_4);
     text-decoration: none;
-    margin-top: 8px;
     cursor: pointer;
 }
 
-#header1 .notification .subnav li a:hover {
+#header1 .notification .subnav li:hover {
+    background-color: var(--neutral_1);
+}
+
+#header1 .notification .subnav li a:hover{
     color: var(--primary_4);
     transition: 0.2s linear;
-    background-color: var(--secondary_2);
 }
 
 /* End of css for notification */
@@ -344,7 +347,7 @@ input:focus{
 }
 
 #header2 .nav-category:hover .subnav {
-    margin-top: 40px;
+    margin-top: 36px;
     display: block !important;
 }
 
@@ -360,7 +363,7 @@ input:focus{
 }
 
 #header2 .subnav li a {
-    padding: 0.7rem;
+    padding: 0.05rem;
     display: block;
     height: 100%;
     font-weight: 600;
@@ -420,7 +423,7 @@ input:focus{
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .manual-btn:not(:last-child) {
@@ -463,7 +466,7 @@ input:focus{
     border: 2px solid var(--primary_3);
     padding: 5px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .slider-auto div:not(:last-child) {
@@ -813,141 +816,122 @@ input:focus{
     transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
-
 /*Discovery more*/
 
-/*BUTTER DÀNH CHO BẠN*/
-.butter-for-you {
-    margin-left: 100px;
-    margin-right: 100px;
+/*butter4U--------------------------*/
+
+/*butter4U--------------------------*/
+
+
+
+/*store---------------------*/
+
+.card .image-box{
+    height: 200px;
 }
 
-.butter-for-you .display_2 {
-    margin-top: 48px;
-    color: var(--neutral_4);
-    font-weight: 700;
-    align-items: center;
-    text-align: center;
-}
-
-.card-wrapper a{
-    text-decoration: none;
-}
-.butter4U-text .butter4U-detail{
-    color: var(--neutral_5);
-}
-.butter4U-text .rating .rate{
-    color: var(--neutral_5);
-}
-
-.slide-container {
-    z-index: 0;
-    max-width: 100%;
+.container{
+    max-width: 1120px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* background-color: gray; */
+    padding: 30px;
+    border-radius: 10px;
+
 }
 
-.card-wrapper .card-content {
-    display: flex;
-    justify-content: space-between;
+.card{
+    /* width: fit-content; */
+    background: var(--primary_2);
+    border-radius: 10px;
+    border: none;
+    transform: scale(1.0);
+    transition: 0.2s ease-in-out;
 }
 
-.butter4U-image img {
-    height: 160px;
-    width: 160px;
-    border-radius: 10%;
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
 }
 
 
-.container {
+.slide-container{
+    margin: 0 30px;
+    overflow: hidden;
+}
+
+.card .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .store-details {
     display: flex;
     align-items: center;
-    justify-self: center;
+    column-gap: 12px;
+    padding: 2px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.card .store-details img{
+    height: 40px;
+    width: 40px;
+}
+
+.store-details .name{
+    font-weight: 700;
+    color: var(--primary_4);
+}
+
+.store-details .detail{
+    font-weight: 600;
+    color: var(--neutral_5);
+    margin-top: -4px;
+}
+
+.store-body{
     margin-top: 24px;
 }
 
-.card-wrapper {
-    padding: 16px;
-    width: 50%;
-    height: auto;
-    margin: 16px;
-    box-sizing: border-box;
-    border: solid var(--neutral_3);
-    border-width: 0.1px;
-    background-color: var(--neutral_1);
-    float: left;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.card-content .butter4U-text {
-    margin-left: 3%;
-}
-
-.card-content .butter4U-text .butter4U-name {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-content .butter4U-text .butter4U-name h3 {
+.store-body .display_2{
+    color: var(--primary_4);
     font-weight: 700;
-    color: var(--neutral_5);
+    text-align: center;
 }
+.card a{
+    text-decoration: none;
+} 
 
-.card-content .butter4U-text .butter4U-name img {
-    width: 25px;
-    height: 25px;
-    transition: 0.2s ease-in-out;
-    transform: scale(1);
+.swiper-button-next {
+    /* position: relative; */
+    top: 320%;
+    z-index: 0;
+    margin-right: 100px;
+    color: var(--neutral_2);
+    transform: scale(1.0);
+    transition: 0.3s ease-in-out;
 }
-
-.butter4U-name img:hover{
-    transition: 0.2s ease-in-out;
+.swiper-button-prev {
+    top: 320%;
+    z-index: 0;
+    margin-left: 100px;
+    color: var(--neutral_2);
+    transform: scale(1.0);
+    transition: 0.3s ease-in-out;
+}
+.swiper-button-next:hover{
     transform: scale(1.1);
+    color: var(--neutral_3);
+    transition: 0.3s ease-in-out;
+}
+.swiper-button-prev:hover{
+    transform: scale(1.1);
+    color: var(--neutral_3);
+    transition: 0.3s ease-in-out;
 }
 
-.card-content .butter4U-text .butter4U-detail p {
-    text-align: justify;
-    margin-top: -2px;
-}
 
-.butter4U-text .rating {
-    display: flex;
-    margin-top: -16px;
-}
-
-.butter4U-text .rating .rate {
-    display: flex;
-    line-height: 30px;
-    vertical-align: middle;
-}
-
-.butter4U-text .rating .rate p {
-    margin-left: 4px;
-}
-
-.butter4U-text .rating .rate span {
-    margin-left: 8px;
-    color: var(--neutral_4);
-}
-
-.butter4U-text .rating img {
-    width: 25px;
-    height: 25px;
-}
-
-.butter4U-price h3 {
-    color: var(--secondary_5);
-    font-weight: 700;
-    margin-top: -16px;
-}
-
-.butter4U-text .btnDesign {
-    height: 100%;
-}
-
-/*BUTTER DÀNH CHO BẠN*/
 
 /*BLOG BUTTER*/
 .chuyenButter-container {
@@ -1087,7 +1071,7 @@ input:focus{
 /*END OF BUTTON SCROLL*/
 
 /*BUTTER APP*/
-.butter-app {
+ /* .butter-app {
     margin-top: 64px;
     display: inline;
 }
@@ -1142,141 +1126,11 @@ input:focus{
 
 .app-content .btn-download .ios {
     margin-bottom: -16px;
-}
+} */
 
 /*BUTTER APP*/
 
-/*CSS FOR STORE START*/
-.store-container {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 40px;
-}
 
-.store-container .store-title .display_2 {
-    color: var(--neutral_4);
-    font-weight: 700;
-    text-align: center;
-    margin-top: 48px;
-}
-
-.store-card {
-    display: inline;
-    height: 370px;
-    width: 95px;
-    max-width: 850px;
-}
-
-.store-card .inner-part {
-    display: flex;
-    margin-top: 32px;
-    background-color: var(--primary_1);
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.store-card .inner-part .store-content {
-    opacity: 1;
-    margin-left: 48px;
-    /* transition: .6s; */
-}
-
-.store-card .inner-part .store-content button {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.0);
-}
-
-.store-card .inner-part .store-content button:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.1);
-}
-
-#tap-1:checked~.inner-part .content-1,
-#tap-2:checked~.inner-part .content-2,
-#tap-3:checked~.inner-part .content-3,
-#tap-4:checked~.inner-part .content-4 {
-    opacity: 1;
-    margin-left: 30px;
-    transition-delay: .3s;
-}
-
-.inner-part .store-content h1 {
-    color: var(--primary_4);
-    font-weight: 700;
-}
-
-.inner-part .store-content span {
-    text-align: justify;
-    font-weight: 600;
-}
-
-.inner-part .store-content button {
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-    margin-top: 8px;
-    border: none;
-    background-color: var(--primary_3);
-    border-radius: 10px;
-}
-
-.inner-part .store-content .button-text {
-    color: var(--neutral_1);
-    font-weight: 700;
-    size: 24px;
-}
-
-.inner-part .store-img img {
-    border-radius: 20px;
-    height: 350px;
-    width: 500px;
-    margin-left: 16px;
-}
-
-.store-card .sliders {
-    position: relative;
-    left: 73%;
-}
-
-.store-content a{
-    text-decoration: none;
-
-}
-/* .store-card .sliders .tap{
-    position: relative;
-    height: 5px;
-    width: 30px;
-    background: var(--neutral_3);
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 3px;
-    cursor: pointer;
-    transform: translateY(440px);
-}
-
-.sliders .tap:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--primary_3);
-    border-radius: 10px;
-    transform: scaleX(0);
-    transition: transform .6s;
-    transform-origin: left;
-}
-
-.sliders .tap:hover:before{
-    transform: scaleX(1);
-} */
-
-.store-card input {
-    display: none;
-}
-
-/*CSS FOR STORE END*/
 
 /* css for button chat start*/
 
@@ -1407,25 +1261,51 @@ input:focus{
 
 /*css for box chat end*/
 
+/*============REVEAL==============*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal2.active2 {
+    transform: translateX(0px);
+    opacity: 1;
+}
+/*============REVEAL==============*/
+
 
 /* FOOTER */
-
 .footer-body {
-    height: 640px;
+    height: 620px;
     background-color: var(--primary_4);
     /* margin-top: 24px; */
     /* border-radius: 50px 50px 0px 0px; */
-    padding-top: 16px;
     width: 101%;
+    padding-top: 16px;
 }
 
 .footer-section {
     padding: 8px 8px 8px 72px;
+    margin-right: 24px;
 }
 
 .footer-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -1441,7 +1321,7 @@ input:focus{
 .footer-content {
     font-size: 20px;
     color: white;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     line-height: 1.6;
 }
 
@@ -1467,12 +1347,13 @@ input:focus{
     padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
+    margin-top: 16px;
     width: 50px;
 }
 
 .socials-list-icon img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .payment-list img {
@@ -1484,7 +1365,7 @@ input:focus{
 
 .payment-list img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .form-control {
@@ -1535,7 +1416,8 @@ input:focus{
     cursor: pointer;
     color: var(--neutral_4);
     background-color: var(--primary_2);
-
+    
 }
+
 
 /* css for content end */

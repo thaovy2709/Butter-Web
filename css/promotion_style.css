@@ -254,17 +254,19 @@
     font-weight: 500;
     color: var(--neutral_4);
     text-decoration: none;
-    margin-top: 8px;
     cursor: pointer;
 }
 
-#header1 .notification .subnav li a:hover {
+#header1 .notification .subnav li:hover {
+    background-color: var(--neutral_1);
+}
+
+#header1 .notification .subnav li a:hover{
     color: var(--primary_4);
     transition: 0.2s linear;
 }
 
 /* End of css for notification */
-
 
 #header2 {
     height: 65px;
@@ -322,8 +324,15 @@
     transition: 0.3s ease-in-out;
 }
 
-#header2 a:hover,
-#header2 a.active{
+#header2 .subnav a:hover, #header2 .subnav a.active {
+    color: var(--primary_4);
+}
+
+#header2 #navigation .nav a:hover{
+    color: var(--primary_4);
+}
+
+#header2 #navigation .nav a.active{
     color: var(--primary_4);
 }
 
@@ -340,7 +349,7 @@
 }
 
 #header2 .nav-category:hover .subnav {
-    margin-top: 40px;
+    margin-top: 36px;
     display: block !important;
 }
 
@@ -356,7 +365,7 @@
 }
 
 #header2 .subnav li a {
-    padding: 0.7rem;
+    padding: 0.05rem;
     display: block;
     height: 100%;
     font-weight: 600;
@@ -748,6 +757,33 @@
 /*PROMOTION CONTENT 2*/
 
 /*PROMOTION CONTENT SEC2*/
+
+/*============REVEAL==============*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal2.active2 {
+    transform: translateX(0px);
+    opacity: 1;
+}
+/*============REVEAL==============*/
+
 #sec2 .bowtie img{
     width: 100%;
     position: relative;
@@ -1006,6 +1042,7 @@
 
 
 /*===============CSS for footer*/
+/* FOOTER */
 .footer-body {
     height: 620px;
     background-color: var(--primary_4);
@@ -1022,7 +1059,7 @@
 
 .footer-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -1038,7 +1075,7 @@
 .footer-content {
     font-size: 20px;
     color: white;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     line-height: 1.6;
 }
 
@@ -1064,12 +1101,13 @@
     padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
+    margin-top: 16px;
     width: 50px;
 }
 
 .socials-list-icon img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .payment-list img {
@@ -1081,7 +1119,7 @@
 
 .payment-list img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .form-control {

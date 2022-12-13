@@ -409,7 +409,8 @@
     
 }
 .main-cookie img{
-    width: 70%;
+    width: 350px;
+    height: 350px;
 }
 
 .body-content .title h4{
@@ -429,65 +430,69 @@
     color: var(--neutral_4);
     font-weight: 700;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
-.body-butterid .option{
+.body-butterid .options{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 200px;
     margin-right: 200px;
 
 }
 
-.body-butterid .option .option-1 h5{
+.body-butterid .options .option__item{
+    margin-left: 100px;
+}
+
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .option .option-1 img{
+.body-butterid .options .option__item img{
     width: 60%;
 }
 
 
-.body-butterid .option .option-2 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .option .option-2 img{
+.body-butterid .options .option__item img{
     width: 60%;
 }
 
-.body-butterid .option .option-3 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .option .option-3 img{
+.body-butterid .options .option__item img{
     width: 60%;
 }
 
-.body-butterid .option .option-4 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .option .option-4 img{
+.body-butterid .options .option__item img{
     width: 60%;
 }
 
-.body-butterid .option .option-5 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .option .option-5 img{
+.body-butterid .options .option__item img{
     width: 60%;
 }
 
@@ -512,6 +517,7 @@
 .nav-button button{
     height: 40px;
     border: none;
+    width: 8%;
     border-radius: 10px;
     padding: 8px;
     width: fit-content;
@@ -543,7 +549,7 @@
 }
 .nav-button .button-text h5{
     font-weight: 700;
-    margin-bottom: -4px;
+    margin-bottom: -6px;
 }
 .body-butterid .nav-bar{
     display: flex;
@@ -588,6 +594,11 @@
     border-left: none;
     background-color: transparent;
     padding: 3px;
+}
+
+.option__item.active{
+    border: 1px solid red;
+    border-radius: 20px;
 }
 
 /*=======================start of CSS FOOTER====================*/

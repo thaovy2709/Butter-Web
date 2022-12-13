@@ -428,9 +428,9 @@
     color: var(--neutral_4);
     font-weight: 700;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 70px;
 }
-.body-butterid .option{
+.body-butterid .options{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -448,14 +448,14 @@
     border-radius: 20px;
 } */
 
-.body-butterid .option .option-1 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 50%;
     margin-left: 48px;
 }
-.body-butterid .option .option-1 img{
+.body-butterid .options .option__item img{
     width: 50%;
     margin-left: 48px;
 }
@@ -464,14 +464,14 @@
     border: solid 0.1px var(--neutral_3);
     border-radius: 20px;
 } */
-.body-butterid .option .option-2 h5{
+.body-butterid .options .option__item h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
     width: 50%;
     margin-left: 48px;
 }
-.body-butterid .option .option-2 img{
+.body-butterid .options .option__item img{
     width: 50%;
     margin-left: 48px;
 }
@@ -486,8 +486,8 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    width: 8%;
-    margin-left: 67%;
+    width: 6%;
+    margin-left: 69%;
     margin-bottom: 16px;
     background-color: var(--neutral_3);
     align-items: center;
@@ -501,20 +501,26 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2px;
 }
 .nav-button .button-text img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    justify-content: baseline;
+
 }
 .nav-button .button-text h5{
     font-weight: 700;
-    margin-bottom: -4px;
+    margin-bottom: -2px;
+    line-height: 30px;
 }
 .body-butterid .nav-bar{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
 }
+
 .nav-bar button{
     width: 150px;
     border: solid 0.05px;
@@ -529,11 +535,22 @@
     border: solid 2px var(--secondary_4) !important;
 }
 
+#opt1.active{
+    border: solid 1px var(--secondary_4);
+    border-radius: 20px;
+}
+
+#opt2.active{
+    border: solid 1px var(--secondary_4);
+    border-radius: 20px;
+}
+
 /*=======================start of CSS FOOTER====================*/
+/* FOOTER */
 .footer-body {
     height: 620px;
     background-color: var(--primary_4);
-    margin-top: 24px;
+    /* margin-top: 24px; */
     /* border-radius: 50px 50px 0px 0px; */
     width: 101%;
     padding-top: 16px;
@@ -546,7 +563,7 @@
 
 .footer-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -562,7 +579,7 @@
 .footer-content {
     font-size: 20px;
     color: white;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     line-height: 1.6;
 }
 
@@ -588,12 +605,13 @@
     padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
+    margin-top: 16px;
     width: 50px;
 }
 
 .socials-list-icon img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .payment-list img {
@@ -605,7 +623,7 @@
 
 .payment-list img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .form-control {

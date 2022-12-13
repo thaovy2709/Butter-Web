@@ -47,25 +47,25 @@
             <div class="title">
                 <h4>Hãy chọn vị kem bạn yêu thích</h4>
             </div>
-            <div class="option">
-                <div class="option-1">
-                    <img src="/img/ButterID/vani.svg" id="creme1">
+            <div class="options">
+                <div class="option__item" id="creme1">
+                    <img src="/img/ButterID/vani.svg" >
                     <h5>Vani</h5>
                 </div>
-                <div class="option-2">
-                    <img src="/img/ButterID/matcha.svg" id="creme2">
+                <div class="option__item" id="creme2">
+                    <img src="/img/ButterID/matcha.svg">
                     <h5>Matcha</h5>
                 </div>
-                <div class="option-3">
-                    <img src="/img/ButterID/choco.svg" id="creme3">
+                <div class="option__item" id="creme3">
+                    <img src="/img/ButterID/choco.svg">
                     <h5>Choco</h5>
                 </div>
-                <div class="option-4">
-                    <img src="/img/ButterID/strawberry.svg" id="creme4">
+                <div class="option__item" id="creme4">
+                    <img src="/img/ButterID/strawberry.svg">
                     <h5>Strawberry</h5>
                 </div>
-                <div class="option-5">
-                    <img src="/img/ButterID/sprinkles.svg" id="creme5">
+                <div class="option__item" id="creme5">
+                    <img src="/img/ButterID/sprinkles.svg">
                     <h5>Sprinkles</h5>
                 </div>
             </div>
@@ -81,13 +81,13 @@
                     </button>
                 </a>
 
-                <a href="butterid_dip.html">
-                    <button id="next">
+                <button id="next">
+                    <a href="butterid_dip.html">
                         <div class="button-text">
                             <h5>TIẾP<img src="/img/ButterID/next-white.svg"></h5>
                         </div>
-                    </button>
-                </a>
+                    </a>
+                </button>
             </div>
             <div class="nav-bar">
                 <a href="butterid.html"><button class="btn1"><img src="/img/ButterID/chosen-size.svg"></button></a>
@@ -122,21 +122,21 @@
         creme5.addEventListener('click', () => next.style.backgroundColor='#D55634')
 
         creme1.addEventListener('click', () => main.src='/img/ButterID/vani.svg')
+        creme2.addEventListener('click', () => main.src='/img/ButterID/matcha.svg')
+        creme3.addEventListener('click', () => main.src='/img/ButterID/choco.svg')
+        creme4.addEventListener('click', () => main.src='/img/ButterID/strawberry.svg')
+        creme5.addEventListener('click', () => main.src='/img/ButterID/sprinkles.svg')
 
 
     </script>
-
-
-
-
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="./jquery"></script>
+    <script src="js/app.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/butterID.js"></script>
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="./jquery"></script>
-<script src="js/app.js"></script>
-<script src="../js/header.js"></script>
-<script src="../js/footer.js"></script>
 
 </html>

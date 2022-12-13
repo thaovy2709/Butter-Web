@@ -419,16 +419,21 @@
     color: var(--neutral_4);
 }
 
-/* .body-butterid .option{
+.body-butterid .option{
     align-items: center;
-} */
+}
+
+
+.body-butterid{
+    align-items: center;
+}
 
 .body-butterid .title h4{
     position: relative;
     color: var(--neutral_4);
     font-weight: 700;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .body-butterid .option{
     display: flex;
@@ -436,58 +441,42 @@
     justify-content: space-around;
     margin-left: 200px;
     margin-right: 200px;
+}
 
+.body-butterid .option .option-1{
+    width: 30%;
+    margin-left: 100px;
 }
 
 .body-butterid .option .option-1 h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
-    width: 60%;
+    width: 50%;
+    margin-left: 48px;
+    margin-top: -32px;
 }
 .body-butterid .option .option-1 img{
-    width: 60%;
+    width: 50%;
+    margin-left: 48px;
 }
 
+
+.body-butterid .option .option-2{
+    width: 30%;
+}
 
 .body-butterid .option .option-2 h5{
     text-align: center;
     font-weight: 700;
     color: var(--neutral_4);
-    width: 60%;
+    width: 50%;
+    margin-left: 48px;
+    margin-top: -32px;
 }
 .body-butterid .option .option-2 img{
-    width: 60%;
-}
-
-.body-butterid .option .option-3 h5{
-    text-align: center;
-    font-weight: 700;
-    color: var(--neutral_4);
-    width: 60%;
-}
-.body-butterid .option .option-3 img{
-    width: 60%;
-}
-
-.body-butterid .option .option-4 h5{
-    text-align: center;
-    font-weight: 700;
-    color: var(--neutral_4);
-    width: 60%;
-}
-.body-butterid .option .option-4 img{
-    width: 60%;
-}
-
-.body-butterid .option .option-5 h5{
-    text-align: center;
-    font-weight: 700;
-    color: var(--neutral_4);
-    width: 60%;
-}
-.body-butterid .option .option-5 img{
-    width: 60%;
+    width: 50%;
+    margin-left: 48px;
 }
 
 .body-butterid .sub-title h4{
