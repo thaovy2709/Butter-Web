@@ -1,0 +1,75 @@
+[
+{
+    "image":"/img/ProductList//daisy1.png",
+    "name":"Daisy",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"250.000 vnđ"
+    
+},
+{
+    "image":"/img/ProductList/higanbana1.png",
+    "name":"Higanbana",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"330.000 vnđ"
+},
+{
+    "image":"/img/ProductList/butterflies1.png",
+    "name":"Butterflies",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"395.000 vnđ"
+},
+{
+    "image":"/img/ProductList/ceredwen1.png",
+    "name":"Ceridwen",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"395.000 vnđ"
+},
+{
+    "image":"/img/ProductList/kaylin1.png",
+    "name":"Kaylin",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"55.000 vnđ"
+},
+{
+    "image":"/img/ProductList/blackberries2.png",
+    "name":"Blackberries",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"/img/ProductList/cutewormchocolate.png",
+    "name":"Cuteworm choco",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"/img/ProductList/oreocheese3.png",
+    "name":"Oreo cheese",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"/img/ProductList/limecheese1.png",
+    "name":"Lime cheese",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"50.000 vnđ"
+}
+]

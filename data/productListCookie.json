@@ -1,0 +1,51 @@
+[
+{
+    "image":"/img/ProductList/cookieoatmeal1.jpg",
+    "name":"Cookie oatmeal",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"50.000 vnđ"
+    
+},
+{
+    "image":"/img/ProductList/browniecookie2.jpg",
+    "name":"Brownie cookie",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"/img/ProductList/dailycookie.png",
+    "name":"Daily cookie",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/cookiecoffee.png",
+    "name":"Brownsugar pop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"50.000 vnđ"
+},
+{
+    "image":"/img/ProductList/Cookiepeanutoatmeal1.jpg",
+    "name":"Cookie peanut",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"55.000 vnđ"
+},
+{
+    "image":"/img/ProductList/browniecookieicecream4.jpg",
+    "name":"Brownie ice-cream",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"50.000 vnđ"
+}
+]

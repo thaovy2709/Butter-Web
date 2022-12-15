@@ -1,0 +1,51 @@
+[
+{
+    "image":"/img/ProductList/pinkpop1.png",
+    "name":"Pink pop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"10.000 vnđ"
+    
+},
+{
+    "image":"/img/ProductList/greenpop1.png",
+    "name":"Green pop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"10.000 vnđ"
+},
+{
+    "image":"/img/ProductList/lollipop1.png",
+    "name":"Lollipop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"10.000 vnđ"
+},
+{
+    "image":"/img/ProductList/brownsugarpop2.png",
+    "name":"Brownsugar pop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"15.000 vnđ"
+},
+{
+    "image":"/img/ProductList/mashmallow1.png",
+    "name":"Marshmallow",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: gram",
+    "price":"20.000 vnđ"
+},
+{
+    "image":"/img/ProductList/silverpop1.png",
+    "name":"Silver pop",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"12.000 vnđ"
+}
+]
