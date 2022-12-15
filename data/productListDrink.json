@@ -1,0 +1,83 @@
+[
+{
+    "image":"/img/ProductList/thaimilktea1.jpg",
+    "name":"Thai milk tea",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"55.000 vnđ"
+    
+},
+{
+    "image":"/img/ProductList/blackteamacchiato1.jpg",
+    "name":"Black tea macchiato",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/jasmineteamacchiato.jpg",
+    "name":"Jasmine tea macchiato",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/catas tea.png",
+    "name":"Calamansi tea",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/matchalatte2.jpg",
+    "name":"Matcha latte",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/cheryolongicetea1.png",
+    "name":"Cherry olong tea",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"65.000 vnđ"
+},
+{
+    "image":"/img/ProductList/icemilkcoffee3.png",
+    "name":"Milk coffee",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"40.000 vnđ"
+},
+{
+    "image":"/img/ProductList/icedcofee1.jpg",
+    "name":"Iced coffee",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"/img/ProductList/coldbrewlatte1.png",
+    "name":"Cold brew latte",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+},
+{
+    "image":"/img/ProductList/coldbrewmocha.png",
+    "name":"Cold brew mocha",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: ly",
+    "price":"45.000 vnđ"
+}
+]

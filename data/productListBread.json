@@ -1,0 +1,75 @@
+[
+{
+    "image":"/img/ProductList/croissanttrungmuoi1.png",
+    "name":"Crosisant trứng",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"40.000 vnđ"
+    
+},
+{
+    "image":"/img/ProductList/brioche2.png",
+    "name":"Brioche",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"/img/ProductList/croissant.png",
+    "name":"Croissant",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"/img/ProductList/chocolatepretzelpastry1.jpg",
+    "name":"Choco pretzel",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"55.000 vnđ"
+},
+{
+    "image":"/img/ProductList/raisinbread1.jpg",
+    "name":"Raisin bread",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"/img/ProductList/multigrainbread2.jpg",
+    "name":"Multi grain bread",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"35.000 vnđ"
+},
+{
+    "image":"/img/ProductList/toastmango1.jpeg",
+    "name":"Toast mango",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"65.000 vnđ"
+},
+{
+    "image":"/img/ProductList/toaststrawberry2.jpg",
+    "name":"Toast strawberry",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"65.000 vnđ"
+},
+{
+    "image":"/img/ProductList/toastlava1.jpg",
+    "name":"Toast lava",
+    "rating":4.9,
+    "stock":"Còn 50 sản phẩm",
+    "unit":"Đơn vị: cái",
+    "price":"65.000 vnđ"
+}
+]
