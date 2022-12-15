@@ -10,11 +10,8 @@ function loadProduct(url){
           out +=  `
          
           <div class="item-card">
-          <a href="productdetail.html">
-          <div class="product-detail">
-            <div style="width:225px;height:225px;overflow:hidden">
+            <a href="productdetail.html">
               <img class="item-img" src="${item.image}">
-            </div>
             <div class="item-content">
               <div class="item-name">
                 <h3>${item.name}</h3>
@@ -32,16 +29,16 @@ function loadProduct(url){
               </div>
               <div class="price">
                 <h3 class="sale-price">${item.price}</h3>
+                <h5 class="old-price"><del>${item.oldPrice}</del></h5>
               </div>
             </div>
-          </div>
-          <button class="btnDesign">
-            <div class="btnOrderText">
-              <img src="/img/icon/BagRed.svg">
-              <h3>Đặt mua</h3>
-            </div>
-          </button>
-          </a>
+            <button class="btnDesign">
+              <div class="btnOrderText">
+                <img src="/img/icon/BagRed.svg">
+                <h3>Đặt mua</h3>
+              </div>
+            </button>
+            </a>
           </div>
          
          

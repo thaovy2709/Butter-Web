@@ -12,7 +12,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/admindashboard_style.css">
-    <title>Butter Bakery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Admin Dashboard | Butter</title>
 </head>
 <body>
     <div class="main">
@@ -20,56 +21,63 @@
             <div class="logo_content">
                 <div class="logo">
                     <img src="/img/logovang.png" class="logo-image">
-                    <img id="btnMenu" src="/img/adminDashboard/Sort.svg">        
                 </div>
+                <img id="btnMenu" src="/img/adminDashboard/Sort.svg">        
             </div>
-        
         <ul class="nav_list">
-            <li class="searchBox">
-                <i class='bx bx-search-alt-2' ></i>
+            <li style="margin-left:-10px ;" class="searchBox">
+                <i class='bx bx-search'></i>
                 <input type="text" placeholder="Search for admin">
+                <span class="tooltip">Search for admin</span>
             </li>
             <li>
-                <a href="#">
+                <a class="highlight" href="admindashboard.html">
                     <img src="/img/adminDashboard/dashboard.svg">
                     <span class="links_name">Dashboard</span>
                 </a>
+                <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a href="#">
+                <a href="adminproduct.html">
                     <img src="/img/adminDashboard/Materials.svg">
                     <span class="links_name">Product</span>
                 </a>
+                <span class="tooltip">Product</span>
             </li>
             <li>
-                <a href="#">
+                <a href="adminorderlist.html">
                     <img src="/img/adminDashboard/Paper.svg">
                     <span class="links_name">Order list</span>
                 </a>
+                <span class="tooltip">Order list</span>
             </li>
             <li>
-                <a href="#">
+                <a href="adminuser.html">
                     <img src="/img/adminDashboard/user.svg">
                     <span class="links_name">Users</span>
                 </a>
+                <span class="tooltip">Users</span>
             </li>
             <li>
-                <a href="#">
+                <a href="adminblog.html">
                     <img src="/img/adminDashboard/blog.svg">
                     <span class="links_name">Blogs</span>
                 </a>
+                <span class="tooltip">Blog</span>
             </li>
             <li>
-                <a href="#">
+                <a href="admindelivery.html">
                     <img src="/img/adminDashboard/delivery.svg">
                     <span class="links_name">Delivery</span>
                 </a>
+                <span class="tooltip">Delivery</span>
             </li>
             <li>
-                <a href="#">
+                <a href="adminpayment.html">
                     <img src="/img/adminDashboard/payment.svg">
                     <span class="links_name">Payment</span>
                 </a>
+                <span class="tooltip">Payment</span>
             </li>
         </ul>
         <div class="profile-content">
@@ -87,7 +95,291 @@
             </div>
         </div>
     </div>
+    <div class="home-content">
+    <div class="container">
+        <h1><b>Dashboard</b></h1>
+        <div class="insight">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Total Sales</h6>
+                            <div class="card-text">
+                                <span class="money_detail">190,000,000</span>
+                                <img class="icon_money" src="/img/icon/coins-stacked-01.svg">
+                            </div> 
+                            <div class="card-text1">
+                                <img src="/img/icon/trend-up-01.svg">
+                                <span class="trend">+60%</span>
+                                <span class="trendTime">this week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Total Order</h6>
+                            <div class="card-text">
+                                <span class="money_detail1">510</span>
+                                <img class="icon_money1" src="/img/icon/pinkorder.svg">
+                            </div> 
+                            <div class="card-text1">
+                                <img src="/img/icon/pinktrend.svg">
+                                <span class="trend1">+60%</span>
+                                <span class="trendTime">this week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Total Profit</h6>
+                            <div class="card-text">
+                                <span class="money_detail">85,000,000</span>
+                                <img class="icon_money" src="/img/icon/profit.svg">
+                            </div> 
+                            <div class="card-text1">
+                                <img src="/img/icon/trend-up-01.svg">
+                                <span class="trend">+60%</span>
+                                <span class="trendTime">this week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Total Product</h6>
+                            <div class="card-text">
+                                <span class="money_detail1">290</span>
+                                <img class="icon_money1" src="/img/icon/Materials.svg">
+                            </div> 
+                            <div class="card-text1">
+                                <img src="/img/icon/pinktrend.svg">
+                                <span class="trend1">+60%</span>
+                                <span class="trendTime">this week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="row">
+                <div class="col">
+                    <div style="background-color: #FFFFFF; width: 930px; height: 400px; margin-top: 30px;" class="card">
+                        <article class="card-body">
+                            <h2 style="color:var(--neutral_4); font-weight: bold;">Sale statistics</h2>
+                            <p style="color:var(--neutral_4); font-size: 16px; font-weight: 400;">Total earning of the month</p>
+                            <canvas id="myChart" style="width:500px; height: auto;"></canvas>
+                            <script>
+                                var xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct","Nov","Dec"];
+                                var yValues = [16, 14, 11, 13, 5, 8, 14, 17, 15, 20, 24, 12];
+
+                                new Chart("myChart", {
+                                    type: "bar",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                            fill: false,
+                                            lineTension: 0,
+                                            backgroundColor: ["#FFE8AA", "#FFC7B7","#FFE8AA", "#FFC7B7","#FFE8AA", "#FFC7B7","#FFE8AA", "#FFC7B7","#FFE8AA", "#FFC7B7","#FFE8AA", "#FFC7B7"],
+                                            data: yValues,
+                                            borderWidth:1
+                                        }]
+                                    },
+                                    options: {
+                                        legend: {
+                                            display: false
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                ticks: {
+                                                    min: 0,
+                                                    max: 40
+                                                }
+                                            }],
+                                        }
+                                    }
+                                });
+                            </script>
+                        </article>
+                    </div>
+                </div>
+                <div class="col">
+                    <div style="background-color: #FFFFFF; width: 250px; height: 400px; margin-top: 30px;" class="card">
+                        <div style="width: 100%">
+                            <article class="card-body">
+                                <h2 style="color:var(--neutral_4); font-weight: bold; margin-bottom: 36px;">Order status</h2>
+                                <canvas id="myChart2" style="width:1000px; height: 1000px;"></canvas>
+                                <script>
+                                    var xValues = ["Delivered", "Pending", "Cancel"];
+                                    var yValues = [30, 60, 10];
+    
+                                    new Chart("myChart2", {
+                                        type: "doughnut",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                                fill: false,
+                                                lineTension: 0,
+                                                backgroundColor: ["#5CC7AF", "#FFD669","#FF9C82"],
+                                                data: yValues,
+                                                hoverOffset:4
+                                            }]
+                                        },
+                                    });
+                                    var optionsPie = 
+                                    {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                    };
+                                </script>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="orderTable">
+            <div class="row">
+                <div class="col">
+                    <div style="background: white;width: 930px;border-radius: 20px; height:400px" class="card">
+                         <div class="card-body">
+                            <h2 style="color:var(--neutral_4); font-weight: bold;">Recent order</h2>
+                            <table style="overflow-x:auto">
+                                <thread>
+                                    <tr style="font-weight: bold; color: var(--neutral_4); font-size: 18px; padding: 15px;">
+                                        <th>Order ID</th>
+                                        <th>Contact</th>
+                                        <th>Total Pay</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thread>
+                                <tbody>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="warning">Pending</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="warning">Pending</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="warning">Pending</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#B1823</td>
+                                        <td>0123456789</td>
+                                        <td>190.000</td>
+                                        <td class="cancel">Cancel</td>
+                                        <td class="delete">Delete</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <a class="showAll" href="adminorderlist.html">Show all orders</a>
+                    </div>
+                    
+                <div class="col">
+                    <div class="card" style="height: 400px; width: 250px;">
+                            <article class="card-body">
+                                <h2 style="color:var(--neutral_4); font-weight: bold;">Reviews</h2>
+                                <span style="font-size: 14px; color: var(--neutral_4);">Overall 1K customers' reviews</span>
+                                <img style="margin-bottom:8px" src="/img/icon/fivestar.svg">
+                                <div class="excellent">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h6>Excellent</h6>
+                                        <span class="progress-text">80%</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-fill excellent-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="good">
+                                    <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                                        <h6>Good</h6>
+                                        <span class="progress-text">70%</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-fill good-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="average">
+                                    <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                                        <h6>Average</h6>
+                                        <span class="progress-text">50%</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-fill average-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="notbad">
+                                    <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                                        <h6>Not bad</h6>
+                                        <span class="progress-text">30%</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-fill notbad-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="bad">
+                                    <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                                        <h6>Bad</h6>
+                                        <span class="progress-text">10%</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-fill bad-bar"></div>
+                                    </div>
+                                </div>
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+    </div>
+    <script>
+        let btnMenu = document.querySelector("#btnMenu");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search-alt-2");
+
+        btnMenu.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            searchBtn.classList.toggle("active");
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 <script src="/js/jquery.min.js"></script>

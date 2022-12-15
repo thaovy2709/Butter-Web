@@ -7,25 +7,43 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background: var(--secondary_1);
+}
+html { 
+    overflow-y: scroll; 
+    overflow-x:hidden; 
+    scroll-behavior: smooth;
+}
+.main{
+    position: relative;
 }
 .sidebar{
     position: fixed;
     top:0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 80px;
     background-color: #FFFFFF;
     padding: 6px 14px;
     box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
 }
 .sidebar .logo_content .logo{
     color: var(--neutral_5);
     display: flex;
     height: 50px;
     width: 100%;
-    margin-top: 24px;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
 }
 .logo-image{
     width: 124px;
@@ -35,25 +53,56 @@ body{
 .sidebar #btnMenu{
     position: absolute;
     color: var(--neutral_3);
-    left: 80%;
+    left: 50%;
+    top:6px;
     font-size: 20px;
     height: 40px;
     width: 40px;
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
-
 }
+.sidebar.active #btnMenu{
+    left:80%;
+}
+
 .sidebar ul{
     margin-top: 20px;
+    padding-left: 0.5rem;
 }
 .sidebar ul li{
     position: relative;
     height: 50px;
     width: 100%;
-    margin: 12px 5px;
+    margin: 12px 0px;
     list-style: none;
     line-height: 50px;
+}
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 90px;
+    top: 0;
+    transform: translateY(-50%, -50%);
+    border-radius: 10px;
+    height: auto;
+    width: 122px;
+    line-height: 35px;
+    background: var(--primary_2);
+    text-align: center;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+    z-index: 10;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    top:0%;
+    transition: all 0.5s ease;
+    opacity: 1;
 }
 .sidebar ul li a{
     color: var(--neutral_5);
@@ -64,26 +113,37 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
-    padding-left: 12px;
+    white-space: nowrap;
+    margin-left: -2px;
 }
-.sidebar ul li a:hover{
+
+.sidebar.active ul li a:hover{
     font-weight: bold;
     background: var(--primary_2);
 }
 .sidebar ul li a img{
-    height: 30px;
-    min-width: 30px;
+    height: 25px;
+    min-width: 25px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
     margin-right: 20px;
 }
 .sidebar ul li i{
-    height: 60px;
-    min-width: 60px;
+    height: 50px;
+    min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
+}
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
 }
 .sidebar ul li input{
     position:absolute;
@@ -91,24 +151,26 @@ body{
     width: 100%;
     left: 0;
     top: 0;
-    border-radius: 30px;
+    border-radius: 12px;
     outline: none;
     border: none;
-    background: var(--neutral_2);
+    background: var(--neutral_1);
     padding-left: 50px;
     font-size: 12px;
     color:black;
 }
-.sidebar ul li .bx-search-alt-2{
+.sidebar ul li .bx-search{
     position: absolute;
     z-index: 99;
     color:black;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    transition: all 0.5s ease;
 }
+
 .sidebar .profile-content{
     position: absolute;
-    color:var(--neutral_3);
+    color:var(--neutral_4);
     bottom: 0;
     left: 0;
     width: 100%;
@@ -122,6 +184,13 @@ body{
 .sidebar .profile .profile-detail{
     display: flex;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.sidebar.active .profile .profile-detail{
+    opacity: 1;
+    pointer-events: auto;
 }
 .profile .profile-detail img{
     height: 45px;
@@ -141,11 +210,266 @@ body{
 }
 #log_out{
     position: absolute;
-    left: 88%;
     bottom:5px;
+    left: 50%;
     transform: translateX(-50%);
     min-width: 50px;
     line-height: 50px;
     font-size: 20px;
     border-radius: 12px;
+    text-align: center;
+}
+.sidebar.active #log_out{
+    left: 88%;
+}
+.home-content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 78px;
+    transition: all 0.5s ease;
+}
+.container{
+    margin: 12px;
+}
+.sidebar.active ~.home-content{
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+/* Hightlight tab trên sidebar */
+.sidebar.active .highlight{
+    color: var(--primary_5) !important;
+    font-weight: bold;
+}
+
+.insight{
+    margin-top: 24px;
+}
+.card{
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+}
+.card-title{
+    font-size: 16px;
+    color: var(--neutral_4);
+    font-weight: bold;
+}
+.card-text{
+    display: flex;
+    justify-content: space-between;
+}
+.money_detail{
+    font-size: 24px;
+    color:var(--primary_4);
+    font-weight: bold;
+}
+.money_detail1{
+    font-size: 24px;
+    color:var(--secondary_3);
+    font-weight: bold;
+}
+.icon_money{
+    background: var(--primary_1);
+    border-radius: 50%;
+    padding: 4px;
+}
+.icon_money1{
+    background: var(--primary_1);
+    border-radius: 50%;
+    padding: 4px;
+}
+.trend{
+    font-size: 12px;
+    color: var(--primary_4);
+    font-weight: bold;
+}
+.trend1{
+    font-size: 12px;
+    color: var(--secondary_3);
+    font-weight: bold;
+}
+.trendTime{
+    font-size: 12px;
+    color: var(--neutral_4);
+    font-weight: 400;
+}
+.card-dashboard{
+    width: 490px;
+    background-color: #FFFFFF;
+}
+.orderTable{
+    margin-top: 24px;
+}
+
+.detail{
+    display: flex;
+    width: auto;
+    height: auto;
+    border-style: solid;
+    padding: 8px;
+    border-color: var(--neutral_4);
+    background: #FFFFFF;
+}
+.actions{
+    display: flex;
+}
+.actions button{
+    border-style: solid;
+    border: 0.5px solid #979C9E;
+    background: #FFFFFF;
+    color: var(--neutral_4);
+    font-size: 10px;
+    width: 50px;
+    height: 24px;
+}
+.orderTable{
+    margin-bottom: 48px;
+}
+.orderTable table{
+    width: 100%;
+    border-radius: 20px;
+    padding: 36px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.orderTable table tr{
+    display: table-row;
+}
+.orderTable table thead tr th{
+    height: 70px;
+}
+.orderTable table tbody tr:hover{
+    background-color: var(--primary_1);
+    cursor: pointer;
+}
+.orderTable table:hover{
+    box-shadow: none;
+}
+.orderTable table tbody td{
+    height: 2.8 rem;
+    color: var(--neutral_4);
+    margin-bottom: 8px;
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 12px;
+}
+.orderTable table tbody tr:last-child td{
+    border: none;
+}
+.orderTable .showAll:link, :visited {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+    color: var(--secondary_5);
+}
+.orderTable .showAll:hover {
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.orderTable .warning{
+    color: var(--primary_4);
+    font-weight: 500;    
+}
+.orderTable .delivered{
+    color: #5CC7AF;
+    font-weight: 500;    
+}
+.orderTable .cancel{
+    color: var(--secondary_3);
+    font-weight: 500;    
+}
+.orderTable .delete:hover{
+    color: var(--secondary_5);
+    font-weight: 600;
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.progress-container {
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-container .progress-fill {
+    position: absolute;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress-container .excellent-bar {
+    background-color: #439381;
+    animation: loadExcellentBar 1s forwards;
+}
+
+.progress-container .good-bar {
+    background-color: #00A1FF;
+    animation: loadgoodBar 1s forwards;
+}
+
+.progress-container .average-bar {
+    background-color: var(--primary_3);
+    animation: loadaverageBar 1s forwards;
+}
+.progress-container .notbad-bar {
+    background-color: var(--secondary_2);
+    animation: loadnotbadBar 1s forwards;
+}
+.progress-container .bad-bar {
+    background-color: #AC3E20;
+    animation: loadBadBar 1s forwards;
+}
+
+.progress-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+@keyframes loadExcellentBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes loadgoodBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes loadaverageBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes loadnotbadBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+@keyframes loadBadBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 10%;
+    }
 }

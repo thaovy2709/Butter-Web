@@ -807,6 +807,7 @@ input.qtyminus { width:30px; height:30px;border-color: #775701; border-style: so
     height: auto; 
     padding: 20px 24px;
     width: 70%;
+    margin-bottom: 48px;
 }
 #order{
     background-color: var(--neutral_1);
