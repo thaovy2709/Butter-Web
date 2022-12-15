@@ -203,11 +203,12 @@
     justify-content: center;
     cursor: pointer;
     vertical-align: middle;
+    margin-top: -24px;
 }
 
 .notify-section .notify-thumb img {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
 }
 
 .notify-text {
@@ -236,7 +237,7 @@
 .notify-section p {
     size: 8px;
     font-weight: 500;
-    line-height: 16px;
+    /* line-height: 16px; */
     text-align: justify;
 }
 
@@ -267,6 +268,7 @@
 }
 
 /* End of css for notification */
+
 
 #header2 {
     height: 65px;
@@ -324,15 +326,8 @@
     transition: 0.3s ease-in-out;
 }
 
-#header2 .subnav a:hover, #header2 .subnav a.active {
-    color: var(--primary_4);
-}
-
-#header2 #navigation .nav a:hover{
-    color: var(--primary_4);
-}
-
-#header2 #navigation .nav a.active{
+#header2 a:hover,
+#header2 a.active {
     color: var(--primary_4);
 }
 
@@ -378,6 +373,7 @@
     background-color: var(--neutral_2);
     color: var(--primary_4);
 }
+
 /*=============CSS for header=========================*/
 
 

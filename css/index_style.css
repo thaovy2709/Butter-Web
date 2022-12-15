@@ -3,11 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* .now {
-    content: '';
-    position: absolute;
-    color: var(--primary_4) !important;
-} */
 
 #header {
     width: 100%;
@@ -207,11 +202,12 @@
     justify-content: center;
     cursor: pointer;
     vertical-align: middle;
+    margin-top: -24px;
 }
 
 .notify-section .notify-thumb img {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
 }
 
 .notify-text {
@@ -240,7 +236,7 @@
 .notify-section p {
     size: 8px;
     font-weight: 500;
-    line-height: 16px;
+    /* line-height: 16px; */
     text-align: justify;
 }
 
@@ -776,6 +772,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 48px;
 }
 
 .discovery-button {
@@ -819,6 +816,111 @@
 /*Discovery more*/
 
 /*butter4U--------------------------*/
+
+.butter4U .container .display_2{
+    color: var(--neutral_4);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.butter4U-main{
+    display: flex;
+    width: fit-content;
+}
+
+.butter4U-main .card-content{
+    display: flex;
+    border: solid 1px var(--neutral_3);
+    padding: 10px;
+    border-radius: 20px;
+    /* box-shadow: 0px -2px 5px rgba(2, 0, 0, 0.2); */
+    width: 50%;
+    margin: 16px;
+    transform: scale(1.0);
+    transition: 0.2s ease-in-out;
+}
+
+.card-content:hover{
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+    border: solid 3px var(--primary_3);
+}  
+
+
+.card-content .butter4U-text {
+    margin-left: 2%;
+}
+
+.card-content .butter4U-text .butter4U-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content .butter4U-text .butter4U-name h3 {
+    font-weight: 700;
+    color: var(--neutral_5);
+}
+
+.card-content .butter4U-text .butter4U-name img {
+    width: 25px;
+    height: 25px;
+    transition: 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+.butter4U-name img:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.card-content .butter4U-text .butter4U-detail p {
+    text-align: justify;
+    margin-top: -2px;
+}
+
+.butter4U-text .rating {
+    display: flex;
+    margin-top: -16px;
+}
+
+.butter4U-text .rating .rate {
+    display: flex;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.butter4U-text .rating .rate p {
+    margin-left: 4px;
+}
+
+.butter4U-text .rating .rate span {
+    margin-left: 8px;
+    color: var(--neutral_4);
+}
+
+.butter4U-text .rating img {
+    width: 25px;
+    height: 25px;
+}
+
+.butter4U-price h3 {
+    color: var(--secondary_5);
+    font-weight: 700;
+    margin-top: -16px;
+}
+
+.butter4U-text .btnDesign {
+    height: 100%;
+}
+
+.butter4U-image img {
+    height: 160px;
+    width: 160px;
+    border-radius: 10%;
+}
+
 
 /*butter4U--------------------------*/
 
@@ -895,9 +997,10 @@
 }
 
 .store-body .display_2{
-    color: var(--primary_4);
+    color: var(--neutral_4);
     font-weight: 700;
     text-align: center;
+    margin-top: 72px;
 }
 .card a{
     text-decoration: none;
@@ -905,7 +1008,7 @@
 
 .swiper-button-next {
     /* position: relative; */
-    top: 320%;
+    top: 480%;
     z-index: 0;
     margin-right: 100px;
     color: var(--neutral_2);
@@ -913,7 +1016,7 @@
     transition: 0.3s ease-in-out;
 }
 .swiper-button-prev {
-    top: 320%;
+    top: 480%;
     z-index: 0;
     margin-left: 100px;
     color: var(--neutral_2);
@@ -1071,9 +1174,9 @@
 /*END OF BUTTON SCROLL*/
 
 /*BUTTER APP*/
- /* .butter-app {
-    margin-top: 64px;
-    display: inline;
+ .butter-app {
+    margin-top: 16px;
+    display: absolute;
 }
 
 .butter-app img {
@@ -1085,7 +1188,7 @@
 .butter-app .app-content {
     display: flex;
     position: absolute;
-    top: 380%;
+    top: 420%;
     left: 60%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -1126,7 +1229,7 @@
 
 .app-content .btn-download .ios {
     margin-bottom: -16px;
-} */
+}
 
 /*BUTTER APP*/
 

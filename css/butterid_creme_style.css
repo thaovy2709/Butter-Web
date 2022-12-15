@@ -17,7 +17,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 5;
+    z-index: 100;
 }
 
 #header1 {
@@ -203,11 +203,12 @@
     justify-content: center;
     cursor: pointer;
     vertical-align: middle;
+    margin-top: -24px;
 }
 
 .notify-section .notify-thumb img {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
 }
 
 .notify-text {
@@ -236,7 +237,7 @@
 .notify-section p {
     size: 8px;
     font-weight: 500;
-    line-height: 16px;
+    /* line-height: 16px; */
     text-align: justify;
 }
 
@@ -254,14 +255,16 @@
     font-weight: 500;
     color: var(--neutral_4);
     text-decoration: none;
-    margin-top: 8px;
     cursor: pointer;
 }
 
-#header1 .notification .subnav li a:hover {
+#header1 .notification .subnav li:hover {
+    background-color: var(--neutral_1);
+}
+
+#header1 .notification .subnav li a:hover{
     color: var(--primary_4);
     transition: 0.2s linear;
-    background-color: var(--secondary_2);
 }
 
 /* End of css for notification */
@@ -341,7 +344,7 @@
 }
 
 #header2 .nav-category:hover .subnav {
-    margin-top: 40px;
+    margin-top: 36px;
     display: block !important;
 }
 
@@ -357,7 +360,7 @@
 }
 
 #header2 .subnav li a {
-    padding: 0.7rem;
+    padding: 0.05rem;
     display: block;
     height: 100%;
     font-weight: 600;
@@ -436,13 +439,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 55%;
+    margin: auto;
+    margin-top: -4px;
 
 }
 
 .body-butterid .options .option__item{
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 .body-butterid .options .option__item h5{
@@ -451,20 +455,8 @@
     color: var(--neutral_4);
     width: 60%;
 }
-.body-butterid .options .option__item img{
-    width: 60%;
-}
 
 
-.body-butterid .options .option__item h5{
-    text-align: center;
-    font-weight: 700;
-    color: var(--neutral_4);
-    width: 60%;
-}
-.body-butterid .options .option__item img{
-    width: 60%;
-}
 
 .body-butterid .options .option__item h5{
     text-align: center;
@@ -493,7 +485,17 @@
     width: 60%;
 }
 .body-butterid .options .option__item img{
-    width: 60%;
+    width: 30%;
+}
+
+.body-butterid .options .option__item h5{
+    text-align: center;
+    font-weight: 700;
+    color: var(--neutral_4);
+    width: 100%;
+}
+.body-butterid .options .option__item img{
+    width: 100%;
 }
 
 .body-butterid .sub-title h4{
@@ -542,6 +544,8 @@
 .nav-button .button-text h5{
     line-height: 40px;
     margin-top: -8px;
+    margin-right: 8px;
+    text-decoration: underline;
 }
 .nav-button .button-text img{
     width: 30px;
@@ -597,11 +601,12 @@
 }
 
 .option__item.active{
-    border: 1px solid red;
+    border: 1px solid var(--secondary_4);
     border-radius: 20px;
 }
 
 /*=======================start of CSS FOOTER====================*/
+/* FOOTER */
 .footer-body {
     height: 620px;
     background-color: var(--primary_4);
@@ -618,7 +623,7 @@
 
 .footer-title {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -634,7 +639,7 @@
 .footer-content {
     font-size: 20px;
     color: white;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     line-height: 1.6;
 }
 
@@ -660,12 +665,13 @@
     padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
+    margin-top: 16px;
     width: 50px;
 }
 
 .socials-list-icon img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .payment-list img {
@@ -677,7 +683,7 @@
 
 .payment-list img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .form-control {

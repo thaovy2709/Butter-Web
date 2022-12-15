@@ -79,3 +79,14 @@ img7.addEventListener('click', function(){
         img7.src='/img/icon/wishlist.svg';
     }
 })
+
+const img8 = document.getElementById('addLove8');
+let toggle8 = true;
+img8.addEventListener('click', function(){
+    toggle8 = !toggle8;
+    if(toggle8){
+        img8.src='/img/icon/addtowishlist.svg';
+    }else{
+        img8.src='/img/icon/wishlist.svg';
+    }
+})
