@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/cancel_style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/img/webicon.png">
+  <title>Yêu cầu hủy đơn</title>
+
+</head>
+
+<body style="background-color:var(--primary_1);">
+
+  <!-- <div class="text-center"> hehehe duplicate me</div> -->
+  <!--Write your code here-->
+  <div id="header">
+    <div id="header1">
+      <div id="logo">
+        <a><img src="/img/logovang.png" alt="Butter" id="logo"></a>
+      </div>
+
+      <div id="delivery">
+        <img src="/img/shipping.png" alt="shipping" id="shipping_icon">
+        <span>
+          <h6><b>Giao hàng</b></h6>
+          <p>Trường Đại học Kinh tế - Luật</p>
+        </span>
+      </div>
+
+      <div class="search_wrapper">
+        <div class="search_bar">
+          <input type="text" name="" placeholder="Hôm nay bạn muốn ăn gì...">
+          <span class="search_icon"><img src="/img/icon/Search.svg"></span>
+          <span class="bottom"></span>
+          <span class="right"></span>
+          <span class="top"></span>
+          <span class="left"></span>
+        </div>
+      </div>
+
+      <!--Start of cart-->
+      <div class="link">
+        <div class="cart"><a href="cart.html">
+            <div class="icon"><img src="/img/icon/Bag.svg"></div>
+          </a></div>
+        <!--End of cart-->
+
+        <!--Start of notification-->
+        <div class="notification"><a href="notification.html">
+            <div class="icon"><img src="/img/icon/Bell.svg"></div>
+          </a>
+          <ul class="subnav">
+            <p id="notification-lable">Thông báo của bạn</p>
+            <li>
+              <a href="cart.html">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti1.svg" alt="">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Đơn hàng đang xử lý</h6>
+                      <p>26/11/2022</p>
+                    </span>
+                    <p>Bạn đã đặt hàng thành công! Hiện đơn hàng đang được chuẩn bị và sẽ giao đến bạn trước 5 giờ
+                      chiều.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="productlist.html">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti2.svg">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Kẹo ngon mời bạn ăn nha</h6>
+                      <p>25/11/2022</p>
+                    </span>
+                    <p>Silver Pop sang xịn mịn đã chính thức ra mắt tại nhà Butter rồi đây! Nhanh tay đặt hàng và nếm
+                      thử nha bạn yêu ơi.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="myvoucher.html">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti3.svg">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Ví Momo tặng bạn mã 50k</h6>
+                      <p>24/11/2022</p>
+                    </span>
+                    <p>Mã giảm có hiệu lực đến hết ngày 30/11. Đến ngay Butter và mua đơn hàng 100k để áp mã bạn nhé.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="promotion.html">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti4.svg">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Gift box mùa Noel</h6>
+                      <p>23/11/2022</p>
+                    </span>
+                    <p>Butter sắp ra mắt gift box độc quyền cho mùa Noel 2022 để bạn dành tặng những người thân yêu.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="blog.html">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti5.svg">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Tất tần tật về cake flour</h6>
+                      <p>22/11/2022</p>
+                    </span>
+                    <p>Bài blog mới: Tất tần tật về cake flour đã được cập nhật. Đọc để hiểu thêm về cake flour bạn nhé.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="notify-section">
+                  <div class="notify-thumb">
+                    <img src="/img/notification/noti6.svg">
+                  </div>
+                  <div class="notify-text">
+                    <span>
+                      <h6>Butter chào bạn mới</h6>
+                      <p>20/11/2022</p>
+                    </span>
+                    <p>Butter chào bạn. Chúc bạn sẽ có nhiều trải nghiệm tuyệt vời nhé!</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--End of notification-->
+
+        <!--Start of account-->
+        <div class="account"><a href="myaccount.html">
+            <div class="icon"><img src="/img/icon/avatar.svg"></div>
+          </a>
+          <ul class="subnav">
+            <li>
+              <a href="myaccount.html">
+                <div class="icon"><img src="/img/icon/viewer.svg"></div>
+                <span>Tài khoản của tôi</span>
+              </a>
+
+            </li>
+            <li>
+              <a href="signup.html">
+                <div class="icon"><img src="/img/icon/addmember.svg"></div>
+                <span>Đăng ký</span>
+              </a>
+
+            </li>
+            <li>
+              <a href="signup.html">
+                <div class="icon"><img src="/img/icon/signin.svg"></div>
+                <span>Đăng nhập</span>
+              </a>
+
+            </li>
+            <li>
+              <a href="signup.html">
+                <div class="icon"><img src="/img/icon/signout.svg"></div>
+                <span>Đăng xuất</span>
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--End of account-->
+
+    <div id="header2" class="active">
+      <div class="nav-category"><a href="productlist.html">
+          <img src="/img/icon/category.svg">
+          <span class="active" id="select"><b>Danh mục sản phẩm</b></span>
+          <i><img class="icon" src="/img/icon/Expand_down_bold.svg"></i>
+        </a>
+
+        <ul class="subnav">
+          <li><a href="productlistcookie.html">Bánh quy</a></li>
+          <li><a href="productlistcandy.html">Kẹo</a></li>
+          <li><a href="productlistbread.html">Bánh mì</a></li>
+          <li><a href="productlistcake.html">Bánh kem</a></li>
+          <li class="last-item"><a href="productlistdrink.html">Thức uống</a></li>
+        </ul>
+      </div>
+
+      <div id="navigation">
+        <ul class="nav">
+          <li><a class="active" href="index.html">Trang chủ</a></li>
+          <li><a href="aboutus.html">Về Butter</a></li>
+          <li><a href="butterid.html">ButterID</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="promotion.html">Khuyến mãi</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="support.html">Hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <!--Header---------------------->
+
+  <div id="container">
+    <div class="account-menu">
+      <!-- <table>
+        <tr>
+          <td rowspan="2">
+            <img class="img-avatar" id="avatar" src="\img\icon\avatar.svg" />
+          </td>
+          <td>
+            <h3 class="user-name">Nhật Hà</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="#" class="edit-profile">
+              <img class="img-setting" src="\img\icon\edit.svg">Thay Avatar
+            </a>
+          </td>
+        </tr>
+      </table> -->
+
+      <div class="main-info">
+        <img class="img-avatar" id="avatar" src="/img/icon/avatar.svg">
+        <div>
+          <h2><b>Nhật Hà</b></h2>
+          <div class="information"><img src="/img/icon/edit_detail.svg">
+            <h4 class="edit-profile">Sửa hồ sơ</h4>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <a href="myaccount.html" class="tab"> <img src="/img/icon/yellowuser.png"> Tài khoản của tôi
+      </a>
+
+      <br><br><a href="#" class="tab"> <img src="\img\icon\receipt-check.svg"> Đơn mua
+      </a>
+
+      <br><br><a href="mynotification.html" class="tab"> <img src="/img/icon/bell-01.svg"> Thông báo
+      </a>
+
+      <br><br><a href="myvoucher.html" class="tab" class="active"> <img src="/img/icon/yellowvoucher.svg"> Kho voucher
+      </a>
+
+      <br><br><a href="#" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
+      </a>
+    </div>
+
+    <div class="card-voucher">
+      <div>
+
+        <div class="header">
+          <a href="ongoing.html"><img src="/img/checkorder/Back.svg" alt="" class="img-back"></a>
+          <div>
+            <b class="request">Yêu cầu hủy đơn hàng</b>
+          </div>
+        </div>
+
+        <hr style="width: 130%">
+
+        <!-- <img class="img-process" src="/img/icon/process-line.svg" alt="" > -->
+
+        <div class="text-footer">
+          <div class="orderID">#221-0112</div>
+          <div class="text-tittle">Giao hàng đến</div>
+          <div class="text-contact">
+            <div>Nhật Hà - 0222 435 143</div>
+            <div>122 Nguyễn Đình Chiểu, Phường 5, Quận 3, Thành phố Hồ Chí Minh</div>
+          </div>
+        </div>
+
+        <!-- <hr style="width: 130%"> -->
+
+        <div class="paymentMethod">
+          <span>Lý do hủy đơn hàng</span>
+          <hr
+            style="width:30%; margin-top: 2px; margin-bottom: 2px; height: 2px; text-align:left;margin-left:0; color: #775701; margin-left: 8px;">
+          <p>Vui lòng chọn lý do hủy đơn của bạn</p>
+
+          <div>
+            <div class="payment-method">
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                Muốn thay đổi phương thức thanh toán
+              </label>
+            </div>
+            <div class="payment-method">
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                Muốn thay đổi địa chỉ giao hàng
+              </label>
+            </div>
+            <div class="payment-method">
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                Muốn thay đổi sản phẩm
+              </label>
+            </div>
+            <div class="payment-method">
+              <label class="container">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                Không muốn mua nữa
+              </label>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;" class="detail-reason">
+            <span>Giải thích lý do</span>
+            <hr
+              style="width:30%; margin-top: 2px; margin-bottom: 2px; height: 2px; text-align:left;margin-left:0; color: #775701; margin-left: 8px;">
+            <!-- <input id="reason-input" type="text" placeholder="Nhập lý do của bạn tại đây"> -->
+          </div>
+
+          <div class="phonenumber-wrapper">
+            <div class="phonenumber-input">
+              <input type="text" name="" placeholder="Nhập lý do của bạn tại đây" style="color: var(--neutral_5);">
+              <span class="bottom"></span>
+              <span class="right"></span>
+              <span class="top"></span>
+              <span class="left"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttonSend">
+          <a href="#">
+            <button class="btnSend" onclick="openPopupConfirm()">Gửi yêu cầu</button>
+          </a>
+
+        </div>
+
+        <div class="popupConfirmOrder" id="popupConfirm">
+          <h2 style="color: #AC3E20;"><b>Hủy đơn hàng thành công!</b></h2>
+          <p><b>Yêu cầu hủy đơn của bạn đã được Butter xác nhận.</b></p>
+          <div class="buttonConfirm">
+            <a href="index.html">
+              <button class="backHomepage" type="button">Tiếp tục mua hàng</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <!--STORE LIST=============================================-->
+    <script>
+      let popupConfirm = document.getElementById("popupConfirm");
+
+      function openPopupConfirm() {
+
+        popupConfirm.classList.add("open-popupConfirmOrder");
+      }
+    </script>
+
+    <!--End line hehehehe-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+
+  </div>
+  <div id="footer"></div>
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="./jquery"></script>
+<script src="js/app.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+
+</html>

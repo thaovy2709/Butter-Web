@@ -18,16 +18,238 @@
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/img/webicon.png">
+  <title>Theo dõi đơn hàng</title>
+
 </head>
-<body style="background-color:var(--neutral_2);" >
+<body style="background-color:var(--primary_1);" >
 
     <!-- <div class="text-center"> hehehe duplicate me</div> -->
     <!--Write your code here-->
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
+    <div id="header">
+      <div id="header1">
+        <div id="logo">
+          <a><img src="/img/logovang.png" alt="Butter" id="logo"></a>
+        </div>
+  
+        <div id="delivery">
+          <img src="/img/shipping.png" alt="shipping" id="shipping_icon">
+          <span>
+            <h6><b>Giao hàng</b></h6>
+            <p>Trường Đại học Kinh tế - Luật</p>
+          </span>
+        </div>
+  
+        <div class="search_wrapper">
+          <div class="search_bar">
+            <input type="text" name="" placeholder="Hôm nay bạn muốn ăn gì...">
+            <span class="search_icon"><img src="/img/icon/Search.svg"></span>
+            <span class="bottom"></span>
+            <span class="right"></span>
+            <span class="top"></span>
+            <span class="left"></span>
+          </div>
+        </div>
+  
+        <!--Start of cart-->
+        <div class="link">
+          <div class="cart"><a href="cart.html">
+              <div class="icon"><img src="/img/icon/Bag.svg"></div>
+            </a></div>
+          <!--End of cart-->
+  
+          <!--Start of notification-->
+          <div class="notification"><a href="notification.html">
+              <div class="icon"><img src="/img/icon/Bell.svg"></div>
+            </a>
+            <ul class="subnav">
+              <p id="notification-lable">Thông báo của bạn</p>
+              <li>
+                <a href="cart.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti1.svg" alt="">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Đơn hàng đang xử lý</h6>
+                        <p>26/11/2022</p>
+                      </span>
+                      <p>Bạn đã đặt hàng thành công! Hiện đơn hàng đang được chuẩn bị và sẽ giao đến bạn trước 5 giờ
+                        chiều.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="productlist.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti2.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Kẹo ngon mời bạn ăn nha</h6>
+                        <p>25/11/2022</p>
+                      </span>
+                      <p>Silver Pop sang xịn mịn đã chính thức ra mắt tại nhà Butter rồi đây! Nhanh tay đặt hàng và nếm
+                        thử nha bạn yêu ơi.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="myvoucher.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti3.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Ví Momo tặng bạn mã 50k</h6>
+                        <p>24/11/2022</p>
+                      </span>
+                      <p>Mã giảm có hiệu lực đến hết ngày 30/11. Đến ngay Butter và mua đơn hàng 100k để áp mã bạn nhé.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="promotion.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti4.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Gift box mùa Noel</h6>
+                        <p>23/11/2022</p>
+                      </span>
+                      <p>Butter sắp ra mắt gift box độc quyền cho mùa Noel 2022 để bạn dành tặng những người thân yêu.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="blog.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti5.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Tất tần tật về cake flour</h6>
+                        <p>22/11/2022</p>
+                      </span>
+                      <p>Bài blog mới: Tất tần tật về cake flour đã được cập nhật. Đọc để hiểu thêm về cake flour bạn nhé.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti6.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Butter chào bạn mới</h6>
+                        <p>20/11/2022</p>
+                      </span>
+                      <p>Butter chào bạn. Chúc bạn sẽ có nhiều trải nghiệm tuyệt vời nhé!</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <!--End of notification-->
+  
+          <!--Start of account-->
+          <div class="account"><a href="myaccount.html">
+              <div class="icon"><img src="/img/icon/avatar.svg"></div>
+            </a>
+            <ul class="subnav">
+              <li>
+                <a href="myaccount.html">
+                  <div class="icon"><img src="/img/icon/viewer.svg"></div>
+                  <span>Tài khoản của tôi</span>
+                </a>
+  
+              </li>
+              <li>
+                <a href="signup.html">
+                  <div class="icon"><img src="/img/icon/addmember.svg"></div>
+                  <span>Đăng ký</span>
+                </a>
+  
+              </li>
+              <li>
+                <a href="signup.html">
+                  <div class="icon"><img src="/img/icon/signin.svg"></div>
+                  <span>Đăng nhập</span>
+                </a>
+  
+              </li>
+              <li>
+                <a href="signup.html">
+                  <div class="icon"><img src="/img/icon/signout.svg"></div>
+                  <span>Đăng xuất</span>
+                </a>
+  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--End of account-->
+  
+      <div id="header2" class="active">
+        <div class="nav-category"><a href="productlist.html">
+            <img src="/img/icon/category.svg">
+            <span class="active" id="select"><b>Danh mục sản phẩm</b></span>
+            <i><img class="icon" src="/img/icon/Expand_down_bold.svg"></i>
+          </a>
+  
+          <ul class="subnav">
+            <li><a href="productlistcookie.html">Bánh quy</a></li>
+            <li><a href="productlistcandy.html">Kẹo</a></li>
+            <li><a href="productlistbread.html">Bánh mì</a></li>
+            <li><a href="productlistcake.html">Bánh kem</a></li>
+            <li class="last-item"><a href="productlistdrink.html">Thức uống</a></li>
+          </ul>
+        </div>
+  
+        <div id="navigation">
+          <ul class="nav">
+            <li><a class="active" href="index.html">Trang chủ</a></li>
+            <li><a href="aboutus.html">Về Butter</a></li>
+            <li><a href="butterid.html">ButterID</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="promotion.html">Khuyến mãi</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="support.html">Hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+  
+  
+    </div>
+    <!--Header--------------->
 
     <div id="container">
         <div class="account-menu">
-          <table>
+          <!-- <table>
               <tr>
                 <td rowspan="2">
                   <img class="img-avatar"id="avatar" src="\img\icon\avatar.svg"/>
@@ -40,13 +262,23 @@
                 <tr>
                   <td>
                     <a href="#" class="edit-profile">
-                      <img class="img-setting" src="\img\icon\edit.svg">Thay Avatar
+                      <img class="img-setting" src="\img\icon\edit_detail.svg">Thay Avatar
                     </a>
                   </td>
                 </tr>
-            </table>
-    
-            <br><a href="myaccount.html" class="tab"> <img src="/img/checkorder/user-01.svg"> Tài khoản của tôi
+            </table> -->
+
+            <div class="main-info">
+              <img class="img-avatar" id="avatar" src="/img/icon/avatar.svg">
+              <div>
+                <h2><b>Nhật Hà</b></h2>
+                <div class="information"><img src="/img/icon/edit_detail.svg"><h4 class="edit-profile">Sửa hồ sơ</h4></div>
+              </div>
+              
+            </div>
+            <br>
+            <br>
+            <a href="myaccount.html" class="tab"> <img src="/img/icon/yellowuser.png"> Tài khoản của tôi
             </a>
     
             <br><br><a href="#" class="tab"> <img src="\img\icon\receipt-check.svg"> Đơn mua 
@@ -55,7 +287,7 @@
             <br><br><a href="mynotification.html" class="tab"> <img src="/img/icon/bell-01.svg"> Thông báo 
             </a>
     
-            <br><br><a href="myvoucher.html" class="selected"> <img src="/img/checkorder/Icon.svg"> Kho voucher
+            <br><br><a href="myvoucher.html" class="tab" class="active"> <img src="/img/icon/yellowvoucher.svg"> Kho voucher
             </a>
     
             <br><br><a href="#" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
@@ -69,7 +301,7 @@
                     <img src="/img/checkorder/Back.svg" alt="" class="img-back">
                     <div>
                         <b class="orderID">#221-0112 | Đơn hàng đang giao</b>
-                    </div>ư
+                    </div>
                 </div>
 
                 <hr id="gray-line">
@@ -94,7 +326,8 @@
                         </div> -->
 
                         <div class="text-detail">
-                            <p>Đơn hàng gồm: Avocado Butter 
+                            <p><b>Đơn hàng gồm:</b> 01 Cuteworm Chocolate+ 02 Toast Strawberry + 01 Matcha latte
+
                             </p>
                         </div>
 
@@ -111,14 +344,7 @@
                     <p class="total-text">Tổng số tiền: </p>
                     <p class="total-number">190.000 VNĐ</p>
                 </div>
-                <div class="button">
-                    <button class="btn-apply">
-                        <p>Mua lại</p>
-                    </button>
-                    <button class="btn-call">
-                        <p>Liên hệ</p>
-                    </button>
-                </div>
+                
 
                 <hr id="gray-line">
                 <div class="text-footer">
@@ -126,8 +352,11 @@
                     <div class="text-contact">
                         <div>Nhật Hà - 0222 435 143</div>
                         <div>122 Nguyễn Đình Chiểu, Phường 5, Quận 3, Thành phố Hồ Chí Minh</div>
-                        <div>Thời gian hoàn thành: 11:11 23/11/2022</div>
                     </div>
+                </div>
+
+                <div class="btn-Cancel">
+                  <a href="cancel.html"><button>HỦY ĐƠN</button></a>
                 </div>
             </div>
                 
@@ -138,7 +367,7 @@
 
    
 
-
+      <div id="footer"></div>
 
       <!--STORE LIST=============================================-->
 
