@@ -10,10 +10,12 @@ function loadProduct(url){
           out +=  `
          
           <div class="item-card">
-          <a href="productdetail.html">
+          
           <div class="product-detail">
             <div style="width:225px;height:225px;overflow:hidden">
+            <a href="productdetail.html">
               <img class="item-img" src="${item.image}">
+            </a>
             </div>
             <div class="item-content">
               <div class="item-name">
@@ -35,6 +37,7 @@ function loadProduct(url){
               </div>
             </div>
           </div>
+          <a href="productdetail.html">
           <button class="btnDesign">
             <div class="btnOrderText">
               <img src="/img/icon/BagRed.svg">

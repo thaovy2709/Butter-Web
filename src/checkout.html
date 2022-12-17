@@ -17,7 +17,7 @@
 <body>
     <div id="header"></div>
 
-    <div class="main|">
+    <div class="main">
         <div>
             <div class="title">
                 <img src="/img/Checkout/homepagesanta.png">
@@ -151,8 +151,8 @@
                                     </div>
                                 </div>         
                             </div>
-                            <a class="myvoucher"  href="myvoucher.html">
-                                <div class="voucher">
+                            <a class="myvoucher" href="#" >
+                                <div class="voucher" onclick="openPopupVoucher()">
                                     <div>
                                         <img class="voucherImage" src="/img/Checkout/VOUCHER-removebg-preview.png">
                                         <p class="titleVoucher">Bạn có 1 ưu đãi</p>
@@ -298,6 +298,28 @@
                     </a>
                 </div>
             </div>
+            <div class="popupVoucher" id="popupVoucher">
+                <div class="headerPopup">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closePopupVoucher()" ></button>
+                    <h2 style="color: #775701; margin: auto;"><b>Ưu đãi của bạn</b></h2>
+                </div>
+                <hr>
+                <div class="Voucher">
+                    <input class="inputVoucher" placeholder="Nhập mã voucher tại đây">
+                    <button class="applyVoucher" type="button" onclick="closePopupVoucher(), confirmVoucher()" >Áp dụng</button>
+                </div>
+                <div class="voucherList">
+                    <div style="font-weight: bold; color: var(--neutral_4);">Sẵn sàng sử dụng</div>
+                    <div class="voucherImageGroup">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion1.png">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion2.png">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion3.png">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion4.png">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion5.png">
+                        <img class="voucherImagePopup" onclick="closePopupVoucher()" src="/img/Checkout/promotion6.png">
+                    </div>
+                </div>
+            </div>
         </div>
         
        
@@ -328,6 +350,42 @@
     function openPopupConfirmOrder(){
         popupConfirm.classList.add("open-popupConfirmOrder");
     }
+
+    let popupVoucher = document.getElementById("popupVoucher");
+
+    function openPopupVoucher(){
+        popupVoucher.classList.add("open-popupVoucher");
+    }
+    function closePopupVoucher(){
+        popupVoucher.classList.remove("open-popupVoucher");
+    }
+
+    const toastTrigger = document.getElementsByClassName('applyVoucher');
+    const toastLiveExample = document.getElementById('liveToast');
+    if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  });
+}
+
+    function confirmVoucher() {
+  // Get the snackbar DIV
+  var confirmVoucher = document.getElementById("confirmVoucher");
+
+  // Add the "show" class to DIV
+  confirmVoucher.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ confirmVoucher.className = confirmVoucher.className.replace("show", ""); }, 8000);
+}
+
+// function confirmVoucher() {
+//     var x = document.getElementById("confirmVoucher")
+//     x.className = "show";
+//     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+// }
 
     jQuery(document).ready(($) => {
         $('.quantity').on('click', '.plus', function(e) {

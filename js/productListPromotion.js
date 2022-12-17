@@ -10,9 +10,10 @@ function loadProduct(url){
           out +=  `
          
           <div class="item-card">
-            <a href="productdetail.html">
-              <img class="item-img" src="${item.image}">
-            <div class="item-content">
+          <a href="productdetail.html">
+          <img class="item-img" src="${item.image}">
+          </a>            
+        <div class="item-content">
               <div class="item-name">
                 <h3>${item.name}</h3>
                 <img src="/img/icon/addtowishlist.svg">
@@ -32,6 +33,7 @@ function loadProduct(url){
                 <h5 class="old-price"><del>${item.oldPrice}</del></h5>
               </div>
             </div>
+            <a href="productdetail.html">
             <button class="btnDesign">
               <div class="btnOrderText">
                 <img src="/img/icon/BagRed.svg">
