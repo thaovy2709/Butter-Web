@@ -13,7 +13,7 @@ var pHeader = (function() {
         <img src="/img/shipping.png" alt="shipping" id="shipping_icon">
         <span>
           <h6><b>Giao hàng</b></h6>
-          <p>Trường đại học Kinh tế - Luật</p>
+          <p>Trường Đại học Kinh tế - Luật</p>
         </span>
       </div>
 
@@ -198,7 +198,7 @@ var pHeader = (function() {
 
       <div id="navigation">
         <ul class="nav">
-          <li><a class="active" href="index.html" class="now">Trang chủ</a></li>
+          <li><a href="index.html" >Trang chủ</a></li>
           <li><a href="aboutus.html">Về Butter</a></li>
           <li><a href="butterid.html">ButterID</a></li>
           <li><a href="blog.html">Blogs</a></li>

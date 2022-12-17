@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: #FFFFFF;
+    padding: 6px 14px;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logo_content .logo{
+    color: var(--neutral_5);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+.logo-image{
+    width: 124px;
+    margin-right: 5px;
+    margin-left: 12px;
+}
+.sidebar #btnMenu{
+    position: absolute;
+    color: var(--neutral_3);
+    left: 50%;
+    top:6px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.sidebar.active #btnMenu{
+    left:80%;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+    padding-left: 0.5rem;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 12px 0px;
+    list-style: none;
+    line-height: 50px;
+}
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 90px;
+    top: 0;
+    transform: translateY(-50%, -50%);
+    border-radius: 10px;
+    height: auto;
+    width: 122px;
+    line-height: 35px;
+    background: var(--primary_2);
+    text-align: center;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    top:50%;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.sidebar ul li a{
+    color: var(--neutral_5);
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+    margin-left: -2px;
+}
+
+.sidebar.active ul li a:hover{
+    font-weight: bold;
+    background: var(--primary_2);
+}
+.sidebar ul li a img{
+    height: 25px;
+    min-width: 25px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+.sidebar ul li input{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: var(--neutral_1);
+    padding-left: 50px;
+    font-size: 12px;
+    color:black;
+}
+.sidebar ul li .bx-search{
+    position: absolute;
+    z-index: 99;
+    color:black;
+    text-align: center;
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .profile-content{
+    position: absolute;
+    color:var(--neutral_4);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sidebar .profile-content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: var(--neutral_2);
+}
+.sidebar .profile .profile-detail{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.sidebar.active .profile .profile-detail{
+    opacity: 1;
+    pointer-events: auto;
+}
+.profile .profile-detail img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.name_job{
+    margin-left: 10px;
+}
+.name_employee{
+    font-size: 15px;
+    font-weight: 600;
+}
+.job_employee{
+    font-size: 12px;
+}
+#log_out{
+    position: absolute;
+    bottom:5px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+.sidebar.active #log_out{
+    left: 88%;
+}
+.home-content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 78px;
+    transition: all 0.5s ease;
+}
+.container{
+    margin: 12px;
+}
+.sidebar.active ~.home-content{
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+/* Hightlight tab trên sidebar */
+.sidebar.active .highlight{
+    color: var(--primary_5) !important;
+    font-weight: bold;
+}
