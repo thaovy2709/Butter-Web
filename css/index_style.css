@@ -4,120 +4,181 @@
     box-sizing: border-box;
 }
 
-#header {
-    width: 100%;
-    padding-left: 72px;
-    padding-right: 72px;
-    padding-top: 9px;
-    position: relative;
-    height: 150px;
-    background-color: white;
+
+
+header{
     box-shadow: 0 0 25px rgba(126, 126, 126, 0.8);
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
+    margin-bottom: -16px;
 }
 
-#header1 {
-    height: 60px;
-    position: relative;
+.section-1{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.delivery{
+    margin-left: 24px;
+}
+
+
+
+.search{
+    background-color: var(--neutral_2);
+    border-radius: 30px;
+    width: 300%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 6px 16px;
+    margin-left: 24px;
+    transition: box-shadow 0.3s;
 }
 
-#logo {
-    width: 194px;
-    height: 96px;
-}
-
-#delivery {
-    display: flex;
-    justify-content: flex-start;
-    width: 306px;
-    height: 53px;
-    background-color: var(--primary_3);
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-#delivery img {
-    margin-top: 2px;
-    margin-left: 4px;
-}
-
-#delivery span {
-    margin-left: 8px;
-    line-height: 8px;
-    margin-top: 6px;
-}
-
-#shipping_icon {
-    width: 48px;
-    height: 48px;
-}
-
-.search_bar {
-    width: 100%;
-    width: 581px;
-    height: 53px;
-    background-color: var(--neutral_2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0;
-    border-radius: 30px;
-    padding: 8px 20px;
-
-}
-
-.search_bar input {
-    background: transparent;
-    width: 100%;
-    max-width: 581px;
+.search input{
+    background-color: transparent;
+    border: none;
+    color: var(--neutral_4);
+    text-align: start;
+    line-height: 42px;
+    width: 200%;
     border: 0;
     outline: none;
-    padding: 20px 8px;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--neutral_4);
-    align-items: center;
 }
 
-.search_bar span {
-    border: 0;
-    width: 40px;
-    height: 40px;
+.search:hover{
+    box-shadow: 0px 0px 10px var(--primary_2);
+}
+
+.search:active{
+    box-shadow: 0px 0px 10px var(--primary_2);
+}
+
+.link-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 100%;
+    align-items: flex-end;
+    margin-left: 24px;
+}
+
+nav ul{
+    list-style-type: none;
+    cursor: default;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 18px;
+    display: block;
+    color: var(--neutral_5);
+    padding: 8px 10px;
+    margin: 0px 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.section-2 nav ul li a:hover{
+    color: var(--primary_4);
+}
+
+nav ul li a.active{
+    color: var(--primary_4);
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle-btn{
+    text-align: right;
+    display: none;
+}
+
+#toggle-btn img{
+    font-size: 24px;
+    padding: 8px;
+    background-color: var(--secondary_2);
+    margin: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+@media screen and (max-width: 768px) and (min-width: 426px){
+    section .section-2{
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+    #toggle-btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    /* nav ul li a img{
+        display: none;
+    } */
 }
 
-.icon {
-    margin-left: 16px;
-
+@media screen and(max-width: 425px) {
+    section .section-2{
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+    #toggle-btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
 }
+
+
 
 /* Start of css for account */
 
-#header1 .account {
-    /* display: flex; */
+.link-btn .account {
+    display: flex;
     padding-left: 2px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     color: var(--neutral-2);
 }
 
-#header1 .subnav {
+.link-btn .subnav {
     z-index: 3;
     position: absolute;
     background-color: white;
@@ -127,25 +188,26 @@
     display: none;
 }
 
-#header1 .account:hover .subnav {
-    margin-top: 10px;
+.link-btn .account:hover .subnav {
+    /* margin-top: 10px; */
     display: block !important;
 }
 
-#header1 .account .subnav {
+.link-btn .account .subnav {
     width: 14rem;
-    right: 0;
+    right: 5rem;
+    top: 4.5rem;
 }
 
-#header1 .account .subnav li {
+.link-btn .account .subnav li {
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+    list-style-type: none;
 }
 
-#header1 .account .subnav li a {
+.link-btn .account .subnav li a {
     line-height: 24px;
     display: flex;
     text-decoration: none;
@@ -153,15 +215,25 @@
     align-items: center;
 }
 
-#header1 .account .subnav li span {
+.link-btn .account .subnav li .icon img{
+    width: 24px;
+}
+
+.link-btn .account .subnav li span {
     line-height: 24px;
-    margin-left: 8px;
+    margin-left: 4px;
+    padding: 8px;
     justify-content: baseline;
 }
 
-#header1 .account .subnav li:hover {
+.link-btn .account .subnav li:hover {
     font-weight: 700;
     transition: 0.2s linear;
+    background-color: var(--primary_1);
+}
+
+.link-btn .account .subnav li a:hover{
+    color: var(--primary_4);
 }
 
 /* End of css for account */
@@ -170,17 +242,18 @@
 /* Start of css for notification */
 
 
-#header1 .notification .subnav {
-    width: 27rem;
-    right: 3rem;
+.link-btn .notification .subnav {
+    width: 24rem;
+    right: 8.3rem;
     position: absolute;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
     display: none;
+    padding: 8px;
 }
 
-#header1 .subnav::before {
+.link-btn .subnav::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -191,8 +264,8 @@
     transform: rotate(45deg);
 }
 
-#header1 .notification:hover .subnav {
-    margin-top: 10px;
+.link-btn .notification:hover .subnav {
+    margin-top: 4px;
     display: block !important;
 }
 
@@ -202,7 +275,7 @@
     justify-content: center;
     cursor: pointer;
     vertical-align: middle;
-    margin-top: -24px;
+    margin-top: 1px;
 }
 
 .notify-section .notify-thumb img {
@@ -236,20 +309,23 @@
 .notify-section p {
     size: 8px;
     font-weight: 500;
-    /* line-height: 16px; */
     text-align: justify;
 }
 
 #notification-lable {
     font-size: 18px;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 8px;
     color: var(--neutral_4);
     text-transform: uppercase;
     font-weight: 700;
 }
 
-#header1 .notification .subnav li a {
+.link-btn .notification .subnav li{
+    list-style-type: none;
+}
+
+.link-btn .notification .subnav li a {
     font-size: 12px;
     font-weight: 500;
     color: var(--neutral_4);
@@ -257,38 +333,37 @@
     cursor: pointer;
 }
 
-#header1 .notification .subnav li:hover {
-    background-color: var(--neutral_1);
+.link-btn .notification .subnav li:hover {
+    background-color: var(--primary_1);
+    transition: 0.2s linear;
 }
 
-#header1 .notification .subnav li a:hover{
+.link-btn .notification .subnav li a:hover{
     color: var(--primary_4);
-    transition: 0.2s linear;
 }
 
 /* End of css for notification */
 
 
-#header2 {
+/* #header2 {
     height: 65px;
     margin-top: 32px;
     position: relative;
     display: flex;
     align-items: baseline;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-}
+} */
 
-#header2 .nav-category {
+.nav-category {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
     cursor: pointer;
 }
 
-#header2 .nav-category a {
-    width: 290px;
-    font-style: normal;
+.nav-category a {
+    /* font-style: normal; */
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
@@ -299,78 +374,48 @@
     transition: 0.3s ease-in-out;
 }
 
-#header2 .nav {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
-    cursor: pointer;
-}
-
-.nav li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.nav li a {
-    color: var(--neutral_5);
-    position: relative;
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    margin-left: 72px;
-    transition: 0.3s ease-in-out;
-}
-
-#header2 a:hover,
-#header2 a.active {
-    color: var(--primary_4);
-}
-
-#header2 .nav-category .subnav {
+.nav-category .subnav {
     z-index: 3;
     position: absolute;
     width: 15rem;
-    margin-top: 0.5rem;
     background-color: white;
     border-radius: 10px;
-    padding: 10px 0;
-    box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
+    padding-top: 8px;
     display: none;
 }
 
-#header2 .nav-category:hover .subnav {
-    margin-top: 36px;
+.nav-category:hover .subnav {
+    margin-top: 40px;
+    box-shadow: 0 0 25px rgba(73, 73, 73, 0.3);
+    margin-left: 32px;
     display: block !important;
 }
 
-.subnav li {
-    /* margin: 10px 0; */
+.nav-category .subnav li {
     list-style-type: none;
-    padding: 10px;
     cursor: pointer;
+    width: 100%;
+    font-weight: 200;
+    text-align: start;
+    margin-left: -20%;
 }
 
-#header2 .subnav .last-item {
+.subnav .last-item {
     border-bottom: none;
 }
 
-#header2 .subnav li a {
-    padding: 0.05rem;
+.nav-category .subnav a {
     display: block;
-    height: 100%;
     font-weight: 600;
     font-size: 16px;
-    align-items: center;
     transition: 0.2s linear;
 }
 
-.subnav li:hover {
-    background-color: var(--neutral_2);
+.nav-category .subnav li:hover {
+    /* background-color: var(--neutral_2); */
     color: var(--primary_4);
+    font-weight: 700;
+    transition: 0.2s linear;
 }
 
 /* ==========================header====================== */
