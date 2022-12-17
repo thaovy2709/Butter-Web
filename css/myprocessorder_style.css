@@ -623,6 +623,16 @@
     color: var(--primary_5);
     font-weight: 700;
 }
+.order-status a {
+    font-size: 18px;
+    color: var(--primary_5);
+    font-weight: 700;
+    text-decoration: none;
+}
+.order-status a:hover{
+    color: var(--secondary_5);
+    cursor: pointer;
+}
 .stroke-status {
     margin-left: 24px;
     margin-top: 8px;

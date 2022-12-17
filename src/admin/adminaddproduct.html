@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/adminaddproduct_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Admin Add Product | Butter</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="/img/logovang.png" class="logo-image">
+                </div>
+                <img id="btnMenu" src="/img/adminDashboard/Sort.svg">        
+            </div>
+        <ul class="nav_list">
+            <li style="margin-left:-10px ;" class="searchBox">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search for admin">
+                <span class="tooltip">Search for admin</span>
+            </li>
+            <li>
+                <a href="admindashboard.html">
+                    <img src="/img/adminDashboard/dashboard.svg">
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a class="highlight" href="adminaddproduct.html">
+                    <img src="/img/adminDashboard/Materials.svg">
+                    <span class="links_name">Product</span>
+                </a>
+                <span class="tooltip">Product</span>
+            </li>
+            <li>
+                <a href="adminorderlist.html">
+                    <img src="/img/adminDashboard/Paper.svg">
+                    <span class="links_name">Order list</span>
+                </a>
+                <span class="tooltip">Order list</span>
+            </li>
+            <li>
+                <a href="adminuser.html">
+                    <img src="/img/adminDashboard/user.svg">
+                    <span class="links_name">Users</span>
+                </a>
+                <span class="tooltip">Users</span>
+            </li>
+            <li>
+                <a href="adminblog.html">
+                    <img src="/img/adminDashboard/blog.svg">
+                    <span class="links_name">Blogs</span>
+                </a>
+                <span class="tooltip">Blog</span>
+            </li>
+            <li>
+                <a href="admindelivery.html">
+                    <img src="/img/adminDashboard/delivery.svg">
+                    <span class="links_name">Delivery</span>
+                </a>
+                <span class="tooltip">Delivery</span>
+            </li>
+            <li>
+                <a href="adminpayment.html">
+                    <img src="/img/adminDashboard/payment.svg">
+                    <span class="links_name">Payment</span>
+                </a>
+                <span class="tooltip">Payment</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-detail">
+                    <div>
+                        <img src="/img/adminDashboard/admin ava.svg">
+                    </div>
+                    <div class="name_job">
+                        <div class="name_employee">Hồng Thắng</div>
+                        <div class="job_employee">admin</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out" ></i>
+            </div>
+        </div>
+    </div>
+    <div class="home-content">
+        <div class="container">
+            <h1><b>Product Management</b></h1>
+        </div>
+        <div class="card-addproduct">
+            <div class="title">
+                <h1><b>ADD NEW PRODUCT</b></h1>
+            </div>
+            <div class="insight">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Add image</h6>
+                            </div>
+                            <div class="card-image">
+                                <img src="/img/icon/camera-plus.svg">
+                                <h6>Drop your files here or <a href="*"> Browse </a></h6>
+                            </div>
+                            <div class="card-detailproduct">
+                                <div class="content-detail">
+                                    <img src="/img/Product/candies/silverpop1.png">
+                                    <div class="name-product">
+                                        <h6>Silver Pop Candy 01.jpg</h6>
+                                        <p>510KB</p>
+                                    </div>
+                                    <img class="image-trash" src="/img/icon/trash-03.svg">
+                                </div>
+                            </div>
+                            <div class="card-detailproduct">
+                                <div class="content-detail">
+                                    <img src="/img/Product/candies/silverpop1.png">
+                                    <div class="name-product">
+                                        <h6>Silver Pop Candy 02.jpg</h6>
+                                        <p>510KB</p>
+                                    </div>
+                                    <img class="image-trash" src="/img/icon/trash-03.svg">
+                                </div>
+                            </div>
+                            <div class="card-detailproduct">
+                                <div class="content-detail">
+                                    <img src="/img/Product/candies/silverpop1.png">
+                                    <div class="name-product">
+                                        <h6>Silver Pop Candy 03.jpg</h6>
+                                        <p>510KB</p>
+                                    </div>
+                                    <img class="image-trash" src="/img/icon/trash-03.svg">
+                                </div>
+                            </div>
+                            <div class="card-detailproduct1">
+                                <div class="content-detail">
+                                    <img src="/img/Product/candies/silverpop2.png">
+                                    <div class="name-product">
+                                        <h6>Silver Pop Candy 04.jpg</h6>
+                                        <p>510KB</p>
+                                    </div>
+                                    <img class="image-trash" src="/img/icon/trash-03.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Add information</h6>
+                                <h5 class="title">Product Name</h5>
+                                <div>
+                                    <input class="card-productinfo" type="text" placeholder="Product name...">
+                                </div>
+                                <h5 class="title">Price</h5>
+                                <div>
+                                    <input class="card-productinfo" type="text" placeholder="000,000">
+                                </div>
+                                <h5 class="title">Description</h5>
+                                <div>
+                                    <input class="card-productinfo1" type="text" placeholder="Write product’s description here...">
+                                </div>
+                                <div class="categoryOptions">
+                                    <h5 class="title">Category</h5>
+                                    <div class="button-category">
+                                        <button class ="button-detailedcategory">Cookies</button>
+                                        <button class="button-detailedcategory">Breads</button>
+                                        <button class="button-detailedcategory">Cakes</button>
+                                        <button class="button-detailedcategory">Candies</button>
+                                        <button class="button-detailedcategory">Drinks</button>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="title">Store</h5>
+                                <div>
+                                    <input class="card-productinfo" type="text" placeholder="Name the store...">
+                                </div>
+                                <div class="button-choose">
+                                    <button class="button-add" onclick="addnotification()">ADD</button>
+                                    <button class="button-cancel"><a href="adminproduct.html">CANCEL</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+    <script>
+        let btnMenu = document.querySelector("#btnMenu");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search-alt-2");
+
+        btnMenu.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            searchBtn.classList.toggle("active");
+        }
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/adminaddproduct.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+</html>
