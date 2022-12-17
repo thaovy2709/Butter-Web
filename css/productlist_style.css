@@ -597,12 +597,11 @@ nav ul li a.active{
 }
 
 
-.list-group a:link, :visited{
+.cardCategory .card-list-item .list-group .list-group-item-light a:link, :visited{
     margin-top: 30px;
     font-size: 22px;
     font-weight: medium;
     text-decoration: none;
-    color: var(--neutral_5);
     text-align: center;
     display: inline-block;
 }
@@ -826,4 +825,21 @@ nav ul li a.active{
     display: flex;
     align-items: center;
 }
-
+.dropdown{
+    color: var(--neutral_2);
+}
+.dropdown-toggle{
+    display: flex;
+    color: var(--neutral_3);
+    font-size: 14px;
+    font-weight: bold;
+    width: 135px;
+    height: 40px;
+    align-items: center;
+}
+.dropdown-item{
+    color: var(--neutral_5);
+}
+.dropdown-item:active{
+    background-color: var(--primary_2);
+}

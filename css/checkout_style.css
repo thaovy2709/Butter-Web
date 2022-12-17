@@ -606,7 +606,7 @@ nav ul li a.active{
 }
 .changeMethod a:link,:visited{
     text-decoration: none;
-    color: #AC3E20;
+    /* color: #AC3E20; */
     font-size: 14px;
     font-weight: 500;
     opacity: 0.5;
@@ -992,6 +992,7 @@ input.qtyminus { width:30px; height:30px;border-color: #775701; border-style: so
     top:85%;
     transform: translate(-50%, -50%) scale(1);
 }
+
 .changeAddressMethod{
     background-color: #FFFF;
     border: 0;
@@ -1181,4 +1182,95 @@ input.qtyminus { width:30px; height:30px;border-color: #775701; border-style: so
     font-size: 18px;
     font-weight: bold;
     margin-left: 16px;
+}
+.popupVoucher{
+    width: 30%;
+    height: auto;
+    background: var(--primary_1);
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popupVoucher{
+    visibility: visible;
+    top:130%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.headerPopup{
+    display: flex;
+    justify-content: center;
+}
+.btn-close{
+    width: 15px;
+    height: 15px;
+    margin:auto;
+    box-sizing: border-box;
+}
+.Voucher{
+    display: flex;
+    justify-content: center;
+}
+.inputVoucher{
+    width: 80%;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: var(--neutral_2);
+    padding-left: 8px;
+}
+.applyVoucher{
+    height: 36px;
+    background: var(--secondary_4);
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:none;
+    margin-left: 4px;
+}
+.voucherList{
+    margin-top: 24px;
+}
+.voucherImagePopup{
+    width: 100%;
+    cursor: pointer;
+}
+.toast:not(.show) {
+    display: block;
+}
+.toast {
+    /* visibility: hidden;  */
+    background-color: var(--primary_2);
+    color: black; 
+    text-align: center; 
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 16px; 
+    position: absolute; 
+    z-index: 1; 
+    top: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid var(--secondary_5);
+  }
+  
+.toast-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.toast-content .text-2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--neutral_4);
+}
+.toast-content .text .text-1{
+    font-weight: bold;
+    color: var(--neutral_5);
+    font-size: 16px;
 }
