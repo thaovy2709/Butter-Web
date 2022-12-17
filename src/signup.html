@@ -126,7 +126,7 @@
     function codeverify() {
       var code = document.getElementById('verificationcode').value;
       coderesult.confirm(code).then(function () {
-          window.location.href = "aboutus.html";
+          window.location.href = "index.html";
       }).catch(function () {
           document.getElementsByClassName('n-conf')[0].style.display = 'block';
       })
