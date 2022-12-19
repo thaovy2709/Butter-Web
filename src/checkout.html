@@ -327,6 +327,22 @@
     
     <div id="footer"></div>
 <script>
+    jQuery(document).ready(($) => {
+        $('.quantity').on('click', '.plus', function(e) {
+            let $input = $(this).prev('input.qty');
+            let val = parseInt($input.val());
+            $input.val( val+1 ).change();
+        });
+ 
+        $('.quantity').on('click', '.minus', 
+            function(e) {
+            let $input = $(this).next('input.qty');
+            var val = parseInt($input.val());
+            if (val > 0) {
+                $input.val( val-1 ).change();
+            } 
+        });
+    });
     let popup = document.getElementById("popup");
 
     function openPopupChangeAddress(){
@@ -381,30 +397,12 @@
   setTimeout(function(){ confirmVoucher.className = confirmVoucher.className.replace("show", ""); }, 8000);
 }
 
-// function confirmVoucher() {
-//     var x = document.getElementById("confirmVoucher")
-//     x.className = "show";
-//     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
-// }
 
-    jQuery(document).ready(($) => {
-        $('.quantity').on('click', '.plus', function(e) {
-            let $input = $(this).prev('input.qty');
-            let val = parseInt($input.val());
-            $input.val( val+1 ).change();
-        });
- 
-        $('.quantity').on('click', '.minus', 
-            function(e) {
-            let $input = $(this).next('input.qty');
-            var val = parseInt($input.val());
-            if (val > 0) {
-                $input.val( val-1 ).change();
-            } 
-        });
-    });
+    
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
