@@ -1053,7 +1053,7 @@ nav ul li a.active{
 
 .swiper-button-next {
     /* position: relative; */
-    top: 480%;
+    top: 540%;
     z-index: 0;
     margin-right: 100px;
     color: var(--neutral_2);
@@ -1061,7 +1061,7 @@ nav ul li a.active{
     transition: 0.3s ease-in-out;
 }
 .swiper-button-prev {
-    top: 480%;
+    top: 540%;
     z-index: 0;
     margin-left: 100px;
     color: var(--neutral_2);
