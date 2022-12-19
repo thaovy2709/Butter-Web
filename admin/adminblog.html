@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/adminblog_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Admin Blog | Butter</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="/img/logovang.png" class="logo-image">
+                </div>
+                <img id="btnMenu" src="/img/adminDashboard/Sort.svg">
+            </div>
+            <ul class="nav_list">
+                <li style="margin-left:-10px ;" class="searchBox">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search for admin">
+                    <span class="tooltip">Search for admin</span>
+                </li>
+                <li>
+                    <a href="admindashboard.html">
+                        <img src="/img/adminDashboard/dashboard.svg">
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a class="highlight" href="adminaddproduct.html">
+                        <img src="/img/adminDashboard/Materials.svg">
+                        <span class="links_name">Product</span>
+                    </a>
+                    <span class="tooltip">Product</span>
+                </li>
+                <li>
+                    <a href="adminorderlist.html">
+                        <img src="/img/adminDashboard/Paper.svg">
+                        <span class="links_name">Order list</span>
+                    </a>
+                    <span class="tooltip">Order list</span>
+                </li>
+                <li>
+                    <a href="adminuser.html">
+                        <img src="/img/adminDashboard/user.svg">
+                        <span class="links_name">Users</span>
+                    </a>
+                    <span class="tooltip">Users</span>
+                </li>
+                <li>
+                    <a href="adminblog.html">
+                        <img src="/img/adminDashboard/blog.svg">
+                        <span class="links_name">Blogs</span>
+                    </a>
+                    <span class="tooltip">Blog</span>
+                </li>
+                <li>
+                    <a href="admindelivery.html">
+                        <img src="/img/adminDashboard/delivery.svg">
+                        <span class="links_name">Delivery</span>
+                    </a>
+                    <span class="tooltip">Delivery</span>
+                </li>
+                <li>
+                    <a href="adminpayment.html">
+                        <img src="/img/adminDashboard/payment.svg">
+                        <span class="links_name">Payment</span>
+                    </a>
+                    <span class="tooltip">Payment</span>
+                </li>
+            </ul>
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="profile-detail">
+                        <div>
+                            <img src="/img/adminDashboard/admin ava.svg">
+                        </div>
+                        <div class="name_job">
+                            <div class="name_employee">Hồng Thắng</div>
+                            <div class="job_employee">admin</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+        <div class="home-content">
+            <div class="container">
+                <h1><b>Blog Management</b></h1>
+                <a href="#"><button type="button" class="addMore">+ Add new blog</button></a>
+            </div>
+            <div class="card-addproduct">
+                <div class="insight">
+                    <div class="content-blog">
+                        <div class="blog-image">
+                            <img src="/img/adminBlog/blog1.svg">
+                        </div>
+                        <div class="blog-text">
+                            <h4>BÁNH NGỌT CÓ THỂ LÀM GIẢM STRESS?</h4>
+                            <p>12/11/2022</p>
+                            <span>Cuộc sống ngày này của thế hệ Gen Z có rất nhiều đều cần phải lo lắng, bận tâm. Do vậy mà tình trạng stress diễn ra cũng rất phổ biến và rất nghiệm trọng. Và bánh ngọt trở thành một món đồ ăn giúp các bạn trẻ giảm stress hiệu quả.</span><br>            
+                            <a href="#"><button type="button" class="editBlog">Edit Blog</button></a>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="content-blog">
+                        <div class="blog-image">
+                            <img src="/img/adminBlog/blog3.svg">
+                        </div>
+                        <div class="blog-text">
+                            <h4>TẤT TẦN TẬT VỀ CAKE FLOUR</h4>
+                            <p>12/11/2022</p>
+                            <span>Bột bánh bông lan (cake flour) là loại bột có kết cấu mềm thường được sử dụng trong làm bánh, đặc biệt là các loại bánh ngọt. Tùy vào từng loại bánh mà chúng ta sẽ sử dụng từng loại bột bánh khác nhau để đảm bảo món bánh làm ra được hoàn hảo.</span><br>                            
+                            <a href="#"><button type="button" class="editBlog">Edit Blog</button></a>
+                        </div>
+                    </div>
+
+                    <div class="content-blog">
+                        <div class="blog-image">
+                            <img src="/img/adminBlog/blog4.svg">
+                        </div>
+                        <div class="blog-text">
+                            <h4>6 LOẠI BÁNH NGỌT PHỔ BIẾN TRÊN THẾ GIỚI</h4>
+                            <p>13/11/2022</p>
+                            <span>Bánh ngọt được ưa chuộng vì nhiều lý do, trong đó quan trọng nhất là sự đa dạng của nó. Dường như phải có một cuốn bách khoa toàn thư để liệt kê tất cả các loại bánh ngọt trên thế giới. Bánh ngọt có thể đáp ứng tất cả sở thích của mọi người, từ Carrot Cake đến Zuppa Inglese, Black Forest Gateau đến Tres Lords. </span><br>      
+                            <a href="#"><button type="button" class="editBlog">Edit Blog</button></a>                      
+                        </div>
+                    </div>
+
+                    <div class="content-blog">
+                        <div class="blog-image">
+                            <img src="/img/adminBlog/blog5.svg">
+                        </div>
+                        <div class="blog-text">
+                            <h4>BÁNH NGỌT CÓ THỂ LÀM GIẢM STRESS?</h4>
+                            <p>12/11/2022</p>
+                            <span>Cuộc sống ngày này của thế hệ Gen Z có rất nhiều đều cần phải lo lắng, bận tâm. Do vậy mà tình trạng stress diễn ra cũng rất phổ biến và rất nghiệm trọng. Và bánh ngọt trở thành một món đồ ăn giúp các bạn trẻ giảm stress hiệu quả.</span><br>                            
+                            <a href="#"><button type="button" class="editBlog">Edit Blog</button></a>
+                        </div>
+                    </div>
+
+                    <div class="content-blog">
+                        <div class="blog-image">
+                            <img src="/img/adminBlog/blog6.svg">
+                        </div>
+                        <div class="blog-text">
+                            <h4>CÁC LOẠI BÁNH MOUSSE PHỔ BIẾN </h4>
+                            <p>14/11/2022</p>
+                            <span>Mousse là một loại bánh có lớp kem mát lạnh mềm mịn, tan trong miệng. Với ý nghĩa là "bọt" trong tiếng Pháp, mousse chính là chiếc bánh có vẻ ngoài đẹp mắt với lớp bánh gato mỏng bên dưới, phía trên là kem mịn, tan nhanh tự bọt biển.</span><br>                            
+                            <a href="#"><button type="button" class="editBlog">Edit Blog</button></a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    let btnMenu = document.querySelector("#btnMenu");
+                    let sidebar = document.querySelector(".sidebar");
+                    let searchBtn = document.querySelector(".bx-search-alt-2");
+
+                    btnMenu.onclick = function () {
+                        sidebar.classList.toggle("active");
+                    }
+                    searchBtn.onclick = function () {
+                        searchBtn.classList.toggle("active");
+                    }
+                </script>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/adminaddproduct.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+
+</html>

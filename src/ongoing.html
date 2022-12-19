@@ -215,7 +215,7 @@
                 </ul>
               </div>
             </li>
-            <li><a class="active" href="index.html">Trang chủ</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li><a href="aboutus.html">Về Butter</a></li>
             <li><a href="butterid.html">ButterID</a></li>
             <li><a href="blog.html">Blogs</a></li>
@@ -263,8 +263,8 @@
             <a href="myaccount.html" class="tab"> <img src="/img/icon/yellowuser.png"> Tài khoản của tôi
             </a>
     
-            <br><br><a href="#" class="tab"> <img src="\img\icon\receipt-check.svg"> Đơn mua 
-            </a>
+            <br><br><a href="myorder.html" class="tab" style="color: var(--primary_4);"> <img src="\img\icon\receipt-check.svg"><b> Đơn mua 
+            </b></a>
     
             <br><br><a href="mynotification.html" class="tab"> <img src="/img/icon/bell-01.svg"> Thông báo 
             </a>
@@ -272,7 +272,7 @@
             <br><br><a href="myvoucher.html" class="tab" class="active"> <img src="/img/icon/yellowvoucher.svg"> Kho voucher
             </a>
     
-            <br><br><a href="#" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
+            <br><br><a href="butterpoint.html" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
             </a>
         </div>
     
@@ -280,7 +280,7 @@
             <div>
 
                 <div class="header">
-                    <img src="/img/checkorder/Back.svg" alt="" class="img-back">
+                    <a href="myorder.html"><img src="/img/checkorder/Back.svg" alt="" class="img-back"></a>
                     <div>
                         <b class="orderID">#221-0112 | Đơn hàng đang giao</b>
                     </div>
@@ -350,6 +350,86 @@
    
 
       <div id="footer"></div>
+
+      <button class="btnScrollToTopp">
+        <img src="/img/icon/scrolltotop.svg">
+      </button>
+      <!-- JS for scroll to top button start -->
+    
+      <script>
+        const btnScrollToTopp = document.querySelector('.btnScrollToTopp');
+    
+        btnScrollToTopp.addEventListener('click', function () {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+        });
+    
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 500) {
+            btnScrollToTopp.classList.add("hide");
+          } else {
+            btnScrollToTopp.classList.remove("hide");
+          }
+        })
+      </script>
+      <!-- JS for scroll to top button end -->
+    
+      <!--BUTTON QUICK CHAT-->
+      <button for="show" class="show-btnFunction btnChat js-btnChat">
+        <img src="/img/icon/mess.svg">
+      </button>
+    
+      <div class="chatWrapper js-chatWrapper">
+        <div class="chat-header">
+          <h5>Let's chat? - Online</h5>
+          <img class="closechat close-chat js-close-chat" src="/img/icon/close.svg">
+        </div>
+    
+        <p>Trò chuyện với Butter bằng cách điền thông tin vào mẫu dưới đây bạn nhé!</p>
+    
+        <form>
+          <input type="text" placeholder="Tên của bạn..." required>
+          <input type="email" placeholder="Email của bạn..." required>
+          <input type="text" placeholder="Tin nhắn của bạn..." required>
+          <button>Gửi</button>
+        </form>
+    
+        <footer>Powered by Butter</footer>
+    
+      </div>
+      <!--BUTTON QUICK CHAT-->
+    
+      <!-- JS for chat box start -->
+      <script>
+        const chatBox = document.querySelector('.js-chatWrapper')
+        const btnchat = document.querySelector('.js-btnChat')
+        const btnclose = document.querySelector('.js-close-chat')
+    
+        function showChatBox() {
+          chatBox.classList.add('showChat');
+        }
+    
+        function hideChatBox() {
+          chatBox.classList.remove('showChat');
+    
+        }
+    
+        btnchat.addEventListener('click', showChatBox);
+    
+        btnclose.addEventListener('click', hideChatBox);
+      </script>
+      <!-- JS for chat box end-->
+    
+      <!--Button make call-->
+      <a href="tel:19001211">
+        <button for="show" class="show-btnFunction btnPhone">
+          <i class="fas fa-phone"><img src="/img/icon/phone.svg"></i>
+        </button>
+      </a>
+      <!--Button make call-->
 
       <!--STORE LIST=============================================-->
 

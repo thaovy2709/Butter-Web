@@ -372,6 +372,86 @@
     </div>
     </div>
 
+    <button class="btnScrollToTopp">
+        <img src="/img/icon/scrolltotop.svg">
+      </button>
+      <!-- JS for scroll to top button start -->
+    
+      <script>
+        const btnScrollToTopp = document.querySelector('.btnScrollToTopp');
+    
+        btnScrollToTopp.addEventListener('click', function () {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+        });
+    
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 500) {
+            btnScrollToTopp.classList.add("hide");
+          } else {
+            btnScrollToTopp.classList.remove("hide");
+          }
+        })
+      </script>
+      <!-- JS for scroll to top button end -->
+    
+      <!--BUTTON QUICK CHAT-->
+      <button for="show" class="show-btnFunction btnChat js-btnChat">
+        <img src="/img/icon/mess.svg">
+      </button>
+    
+      <div class="chatWrapper js-chatWrapper">
+        <div class="chat-header">
+          <h5>Let's chat? - Online</h5>
+          <img class="closechat close-chat js-close-chat" src="/img/icon/close.svg">
+        </div>
+    
+        <p>Trò chuyện với Butter bằng cách điền thông tin vào mẫu dưới đây bạn nhé!</p>
+    
+        <form>
+          <input type="text" placeholder="Tên của bạn..." required>
+          <input type="email" placeholder="Email của bạn..." required>
+          <input type="text" placeholder="Tin nhắn của bạn..." required>
+          <button>Gửi</button>
+        </form>
+    
+        <footer>Powered by Butter</footer>
+    
+      </div>
+      <!--BUTTON QUICK CHAT-->
+    
+      <!-- JS for chat box start -->
+      <script>
+        const chatBox = document.querySelector('.js-chatWrapper')
+        const btnchat = document.querySelector('.js-btnChat')
+        const btnclose = document.querySelector('.js-close-chat')
+    
+        function showChatBox() {
+          chatBox.classList.add('showChat');
+        }
+    
+        function hideChatBox() {
+          chatBox.classList.remove('showChat');
+    
+        }
+    
+        btnchat.addEventListener('click', showChatBox);
+    
+        btnclose.addEventListener('click', hideChatBox);
+      </script>
+      <!-- JS for chat box end-->
+    
+      <!--Button make call-->
+      <a href="tel:19001211">
+        <button for="show" class="show-btnFunction btnPhone">
+          <i class="fas fa-phone"><img src="/img/icon/phone.svg"></i>
+        </button>
+      </a>
+      <!--Button make call-->
+
     <div id="footer"></div>
     <!--End line hehehehe-->
     <script src="/js/countdata.js"></script>

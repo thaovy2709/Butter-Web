@@ -13,20 +13,21 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/checkorder.css">
+  <link rel="stylesheet" href="/css/butterpoint.css">
   <script
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
-  <title>Đơn hoàn thành</title>
+  <title>ButterPoint</title>
   <link rel="icon" type="image/x-icon" href="/img/webicon.png">
 </head>
 <body style="background-color:var(--primary_1);" >
 
     <!-- <div class="text-center"> hehehe duplicate me</div> -->
     <!--Write your code here-->
-    <!--HEADER-->
+    <!--Header-->
     <!-- <div id="header"></div> -->
+
     <header style="background-color: white;">
       <section class="section-1">
         <div class="logo">
@@ -226,7 +227,8 @@
         </nav>
       </section>
     </header>
-    <!--HEADER-->
+
+    <!--Header-->
 
     <div id="container">
       <div class="account-menu">
@@ -262,8 +264,8 @@
           <a href="myaccount.html" class="tab"> <img src="/img/icon/yellowuser.png"> Tài khoản của tôi
           </a>
   
-          <br><br><a href="myorder.html" class="tab" style="color: var(--primary_4);"> <img src="\img\icon\receipt-check.svg"><b> Đơn mua 
-          </b></a>
+          <br><br><a href="myorder.html" class="tab"> <img src="\img\icon\receipt-check.svg"> Đơn mua 
+          </a>
   
           <br><br><a href="mynotification.html" class="tab"> <img src="/img/icon/bell-01.svg"> Thông báo 
           </a>
@@ -271,74 +273,163 @@
           <br><br><a href="myvoucher.html" class="tab" class="active"> <img src="/img/icon/yellowvoucher.svg"> Kho voucher
           </a>
   
-          <br><br><a href="butterpoint.html" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
+          <br><br><a href="#" class="tab" style="color: var(--primary_4);"> <img src="\img\icon\COOKIES.svg"><b> ButterPoint</b>
           </a>
       </div>
     
         <div class="card-voucher">
-            <div>
 
-                <div class="header">
-                    <a href="myfinishedorder.html"><img src="/img/checkorder/Back.svg" alt="" class="img-back"></a>
-                    <div>
-                        <b class="orderID">#221-0095 | Đơn hàng đã giao</b>
-                    </div>
+        <div class="text-content">
+            <img class="point-img" src="/img/checkorder/ButterPoint.svg">
+            <div class="point-number">541</div>
+            <div class="text-point">
+                <div class="text-point1">ButterPoint đang có</div>
+                <div class="text-point2">sẽ hết hạn vào 31/12/2022</div>
+            </div>
+          
+        </div>
+
+            <div class="tabs">
+                <div class="tabs_head">
+                    <span class="tabs_toggle is-active">TẤT CẢ LỊCH SỬ</span>
+                    <span class="tabs_toggle">ĐÃ NHẬN</span>
+                    <span class="tabs_toggle">ĐÃ DÙNG</span>
                 </div>
-
-                <hr id="gray-line">
-
-                <img class="img-process" src="/img/checkorder/Group 8847.svg" alt="" >
-
-                <hr id="gray-line">
-
-                <div class="order-detail">
-                    <img class="img-detail" src="/img/checkorder/10(1) 1.svg">
-                    <div class="text-order">
-                        <div class="row">
-                            <p class="col col-md-auto" style="color: var(--secondary_5); font-weight: bold; flex-grow: 9;">#221-0112 </p>
-                            <p class="col col-md-auto" style="color: var(--primary_5); font-weight: bold; margin-left: 2px; width: fit-content; flex-grow: 4; ">Giao hàng thành công |</p>
-                            <p class="col col-md-auto" style="color: var(--secondary_5); font-weight: bold; flex-grow: 2; justify-content:end;">Đã giao</p>
+    
+                <div class="tabs_body">
+                    <div class="tabs_content is-active">
+                      <div class="main">
+                        <div class="detail-content">
+                          <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                          <div class="textt">
+                            <h2 class="tabs_title">Hoàn tất đơn hàng #221-0112 </h2>
+                            <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                            <p class="tabs_text">11:11 23/11/2022</p>
                           </div>
+                        </div>
+                        <div class="point-detail">+200</div>
+                      </div>
+                        
 
+                        <hr id="gray-line">
 
-                        <div class="text-detail">
-                            <p>Đơn hàng gồm: Avocado Butter 
-                            </p>
+                        <div class="main">
+                          <div class="detail-content">
+                            <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                            <div class="textt">
+                              <h2 class="tabs_title">Hoàn tất đơn hàng #221-0068  </h2>
+                              <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                              <p class="tabs_text">17:40 20/11/2022</p>
+                            </div>
+                          </div>
+                          <div class="point-detail">+300</div>
                         </div>
 
-                        <div class="price">
-                            <p class="price-traditional">230.000 VNĐ</p>
-                            <p class="price-sale">-40.000 VNĐ</p>
+                        <hr id="gray-line">
+
+
+                        <div class="main">
+                          <div class="detail-content">
+                            <img class="point-imgt" src="/img/checkorder/Ellipse 82.svg">
+                            <div class="textt">
+                              <h2 class="tabs_title">Hoàn tất đơn hàng #221-0013  </h2>
+                              <p class="tabs_text">Bạn đã sử dụng ButterPoint để đổi ưu đãi thành công</p>
+                              <p class="tabs_text">13:21 15/11/2022</p>
+                            </div>
+                          </div>
+                          <div class="point-detail"><p>-159</p></div>
+                        </div>
+
+                        <hr id="gray-line">
+
+                        <div class="main">
+                          <div class="detail-content">
+                            <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                            <div class="textt">
+                              <h2 class="tabs_title">Hoàn tất đơn hàng #221-0013  </h2>
+                              <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                              <p class="tabs_text">13:21 15/11/2022</p>
+                            </div>
+                          </div>
+                          <div class="point-detail">+200</div>
                         </div>
                         
                     </div>
-                </div>
-                <hr id="gray-line">
+                    <div class="tabs_content">
+                      <div class="main">
+                        <div class="detail-content">
+                          <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                          <div class="textt">
+                            <h2 class="tabs_title">Hoàn tất đơn hàng #221-0112 </h2>
+                            <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                            <p class="tabs_text">11:11 23/11/2022</p>
+                          </div>
+                        </div>
+                        <div class="point-detail">+200</div>
+                      </div>
 
-                <div class="total">
-                    <p class="total-text">Tổng số tiền: </p>
-                    <p class="total-number">190.000 VNĐ</p>
-                </div>
-                <div class="button">
-                    <button class="btn-apply">
-                        <p>Mua lại</p>
-                    </button>
-                    <button class="btn-call">
-                        <p>Liên hệ</p>
-                    </button>
-                </div>
+                      <hr id="gray-line">
 
-                <hr id="gray-line">
-                <div class="text-footer">
-                    <div class="text-tittle">Giao hàng đến</div>
-                    <div class="text-contact">
-                        <div>Nhật Hà - 0222 435 143</div>
-                        <div>122 Nguyễn Đình Chiểu, Phường 5, Quận 3, Thành phố Hồ Chí Minh</div>
-                        <div>Thời gian hoàn thành: 11:11 23/11/2022</div>
+                        <div class="main">
+                          <div class="detail-content">
+                            <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                            <div class="textt">
+                              <h2 class="tabs_title">Hoàn tất đơn hàng #221-0068  </h2>
+                              <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                              <p class="tabs_text">17:40 20/11/2022</p>
+                            </div>
+                          </div>
+                          <div class="point-detail">+300</div>
+                        </div>
+
+                        <hr id="gray-line">
+
+                        <div class="main">
+                          <div class="detail-content">
+                            <img class="point-imgt" src="/img/checkorder/ButterPoint.svg">
+                            <div class="textt">
+                              <h2 class="tabs_title">Hoàn tất đơn hàng #221-0013  </h2>
+                              <p class="tabs_text">Tích lũy ButterPoint từ hoàn tất đơn hàng thành công</p>
+                              <p class="tabs_text">13:21 15/11/2022</p>
+                            </div>
+                          </div>
+                          <div class="point-detail">+200</div>
+                        </div>
+                       
                     </div>
+                    <div class="tabs_content">
+                      <div class="main">
+                        <div class="detail-content">
+                          <img class="point-imgt" src="/img/checkorder/Ellipse 82.svg">
+                          <div class="textt">
+                            <h2 class="tabs_title">Miễn phí 1 Brown Sugar Pop bất kỳ  </h2>
+                            <p class="tabs_text">Bạn đã sử dụng ButterPoint để đổi ưu đãi thành công</p>
+                            <p class="tabs_text">13:21 15/11/2022</p>
+                          </div>
+                        </div>
+                        <div class="point-detail"><p>-159</p></div>
+                      </div>
+
+                      <hr id="gray-line">
+
+                      <div class="main">
+                        <div class="detail-content">
+                          <img class="point-imgt" src="/img/checkorder/Ellipse 82.svg">
+                          <div class="textt">
+                            <h2 class="tabs_title">1000 điểm lấy 1 Cookie bất kỳ  </h2>
+                            <p class="tabs_text">Bạn đã sử dụng ButterPoint để đổi ưu đãi thành công </p>
+                            <p class="tabs_text">14:21 16/11/2022</p>
+                          </div>
+                        </div>
+                        <div class="point-detail"><p>-1000</p></div>
+                      </div>
+                    </div>
+                    
                 </div>
+
             </div>
-                
+           
+               
         
           </div>
     
@@ -349,6 +440,7 @@
 
 
       <!--STORE LIST=============================================-->
+
       <div id="footer"></div>
 
       <button class="btnScrollToTopp">
@@ -433,6 +525,7 @@
 
 
     <!--End line hehehehe-->
+   <script src="/js/checkorder.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 <script src="js/jquery.min.js"></script>

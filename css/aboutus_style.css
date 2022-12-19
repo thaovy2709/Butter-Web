@@ -637,6 +637,7 @@ nav ul li a.active{
 }
 
 /* Footer */
+/* FOOTER */
 .footer-body {
     height: 620px;
     background-color: var(--primary_4);
@@ -695,12 +696,13 @@ nav ul li a.active{
     padding: 0px 8px;
     transition: 0.2s ease-in-out;
     transform: scale(1);
+    margin-top: 16px;
     width: 50px;
 }
 
 .socials-list-icon img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .payment-list img {
@@ -712,7 +714,7 @@ nav ul li a.active{
 
 .payment-list img:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .form-control {
@@ -765,3 +767,153 @@ nav ul li a.active{
     background-color: var(--primary_2);
     
 }
+
+/*BTN Scroll to top*/
+.btnScrollToTopp {
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.btnScrollToTopp.hide {
+    opacity: 1;
+}
+
+/*END OF BUTTON SCROLL*/
+
+/* css for button chat start*/
+
+.show-btnFunction {
+    z-index: 1;
+    position: fixed;
+    right: 0.5rem;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: var(--primary_2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    cursor: pointer;
+    /* opacity: 0; */
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+}
+
+.show-btnFunction:hover {
+    transform: scale(1.2);
+}
+
+.btnPhone {
+    bottom: 15%;
+}
+
+.btnChat {
+    bottom: 25%;
+}
+
+/* css for button chat end*/
+
+/* css for box chat start */
+
+.chatWrapper {
+    z-index: 4;
+    position: fixed;
+    width: 250px;
+    height: 350px;
+    right: 0.5rem;
+    bottom: 35%;
+    background-color: var(--primary_1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(163, 105, 105, 0.2);
+    display: none;
+    animation: chatFadeIn ease-in-out 0.2s;
+}
+
+.chat-header {
+    background-color: var(--primary_3);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.closechat {
+    float: right;
+    right: 5%;
+    cursor: pointer;
+}
+
+.chatWrapper h5 {
+    color: var(--primary_5);
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-flex;
+}
+
+.chatWrapper p {
+    font-size: 14px;
+    margin-top: 4px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.chatWrapper form {
+    margin: 8px;
+    width: 230px;
+}
+
+.chatWrapper form>input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--primary_4);
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.showChat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatWrapper form>button {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary_3);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.chatWrapper footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--light-gray);
+}
+
+@keyframes chatFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*css for box chat end*/

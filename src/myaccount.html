@@ -17,26 +17,226 @@
   <!-- flatpickr -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <title>Tài Khoản Của Tôi</title>
+  <link rel="icon" type="image/x-icon" href="/img/webicon.png">
   <script
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color:var(--neutral_2);">
+<body style="background-color:var(--primary_1);">
 
       <!-- <div class="text-center"> hehehe duplicate me</div> -->
     <!--Write your code here-->
 
     <!-- Start header -->
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
+    <header style="background-color: white;">
+      <section class="section-1">
+        <div class="logo">
+          <img src="/img/logovang.svg">
+        </div>
+        <div class="delivery">
+          <img src="/img/delivery_info.svg" alt="shipping" id="shipping_icon">
+          <!-- <div class="delivery-info">
+              <p><b>Giao hàng</b></p>
+              <p>Trường Đại học Kinh tế - Luật</p>
+            </div> -->
+        </div>
+  
+        <div class="search">
+          <input type="text" name="" placeholder="Hôm nay bạn muốn ăn gì...">
+          <span class="search_icon"><img src="/img/icon/Search.svg"></span>
+        </div>
+        <div class="link-btn">
+          <a href="checkout.html"><img src="/img/icon/Bag.svg"></a>
+          <div class="notification"><a href="mynotification.html"><img src="/img/icon/Bell.svg"></a>
+  
+            <ul class="subnav">
+              <p id="notification-lable">Thông báo của bạn</p>
+              <li>
+                <a href="checkout.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti1.svg" alt="">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Đơn hàng đang xử lý</h6>
+                        <p>26/11/2022</p>
+                      </span>
+                      <p>Bạn đã đặt hàng thành công! Hiện đơn hàng đang được chuẩn bị và sẽ giao đến bạn trước 5 giờ
+                        chiều.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="productlistcandy.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti2.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Kẹo ngon mời bạn ăn nha</h6>
+                        <p>25/11/2022</p>
+                      </span>
+                      <p>Silver Pop siêu xịn đã ra mắt tại nhà Butter rồi đây! Nhanh tay đặt hàng và nếm
+                        thử nha bạn yêu ơi.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="event.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti3.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Ví Momo tặng bạn mã 50k</h6>
+                        <p>24/11/2022</p>
+                      </span>
+                      <p>Mã giảm có hiệu lực đến hết ngày 30/11. Đến ngay Butter và mua đơn hàng 100k để áp mã bạn nhé.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="promotion.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti4.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Gift box mùa Noel</h6>
+                        <p>23/11/2022</p>
+                      </span>
+                      <p>Butter sắp ra mắt gift box độc quyền cho mùa Noel 2022 để bạn dành tặng những người thân yêu.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="blog.html">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti5.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Tất tần tật về cake flour</h6>
+                        <p>22/11/2022</p>
+                      </span>
+                      <p>Bài blog mới: Tất tần tật về cake flour đã được cập nhật. Đọc để hiểu thêm về cake flour bạn nhé.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#">
+                  <div class="notify-section">
+                    <div class="notify-thumb">
+                      <img src="/img/notification/noti6.svg">
+                    </div>
+                    <div class="notify-text">
+                      <span>
+                        <h6>Butter chào bạn mới</h6>
+                        <p>20/11/2022</p>
+                      </span>
+                      <p>Butter chào bạn. Chúc bạn sẽ có nhiều trải nghiệm tuyệt vời nhé!</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+  
+          <div class="account"><a href="myaccount.html"><img src="/img/icon/avatar.svg"></a>
+  
+            <ul class="subnav">
+              <li>
+                <a href="myaccount.html">
+                  <div class="icon"><img src="/img/icon/viewer.svg"></div>
+                  <span>Tài khoản của tôi</span>
+                </a>
+  
+              </li>
+  
+              <li>
+                <a href="signup.html">
+                  <div class="icon"><img src="/img/icon/signin.svg"></div>
+                  <span>Đăng nhập</span>
+                </a>
+  
+              </li>
+              <li>
+                <a href="signup.html">
+                  <div class="icon"><img src="/img/icon/signout.svg"></div>
+                  <span>Đăng xuất</span>
+                </a>
+  
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+  
+  
+      </section>
+  
+      <section class="section-2">
+        <nav>
+          <div id="toggle-btn">
+            <label for="toggle">
+              <img src="/img/icon/bar.svg">
+            </label>
+          </div>
+          <input type="checkbox" id="toggle">
+          <ul>
+            <li>
+              <div class="nav-category">
+                <a href="productlist.html"><img src="/img/icon/category.svg"> Danh mục sản phẩm <img
+                    src="/img/icon/Expand_down_bold.svg"></a>
+  
+                <ul class="subnav">
+                  <a href="productlistcookie.html"><li>Bánh quy</li></a>
+                  <a href="productlistcandy.html"><li>Kẹo</li></a>
+                  <a href="productlistbread.html"><li>Bánh mì</li></a>
+                  <a href="productlistcake.html"><li>Bánh kem</li></a>
+                  <a href="productlistdrink.html"><li class="last-item">Thức uống</li></a>
+                </ul>
+              </div>
+            </li>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="aboutus.html">Về Butter</a></li>
+            <li><a href="butterid.html">ButterID</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="promotion.html">Khuyến mãi</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="support.html">Hỗ trợ</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
     <!-- End header  -->
 
     <!-- Start create account menu -->
 
     <div id="container">
     <div class="account-menu">
-      <table>
+      <!-- <table>
           <tr>
             <td rowspan="2">
               <img class="img-avatar"id="avatar" src="\img\icon\avatar.svg"/>
@@ -53,10 +253,20 @@
                 </a>
               </td>
             </tr>
-        </table>
+        </table> -->
 
-        <br><a href="myaccount.html" class="selected"> <img src="\img\icon\user-01.svg"> Tài khoản của tôi
-        </a>
+        <div class="main-info">
+          <img class="img-avatar" id="avatar" src="/img/icon/avatar.svg">
+          <div>
+            <h2><b>Nhật Hà</b></h2>
+            <div class="information"><img src="/img/icon/edit_detail.svg"><h4 class="edit-profile">Sửa hồ sơ</h4></div>
+          </div>
+          
+        </div>
+        <br>
+
+        <br><a href="myaccount.html" class="tab" style="color: var(--primary_4);"> <img src="/img/icon/user-yellow.svg"><b> Tài khoản của tôi
+        </b></a>
 
         <br><br><a href="myorder.html" class="tab"> <img src="\img\icon\receipt-check.svg"> Đơn mua 
         </a>
@@ -67,7 +277,7 @@
         <br><br><a href="myvoucher.html" class="tab"> <img src="\img\icon\ticket-01.svg"> Kho voucher
         </a>
 
-        <br><br><a href="#" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
+        <br><br><a href="butterpoint.html" class="tab"> <img src="\img\icon\COOKIES.svg"> ButterPoint
         </a>
     </div>
 
@@ -121,6 +331,86 @@
   
 
   </div>
+
+  <button class="btnScrollToTopp">
+    <img src="/img/icon/scrolltotop.svg">
+  </button>
+  <!-- JS for scroll to top button start -->
+
+  <script>
+    const btnScrollToTopp = document.querySelector('.btnScrollToTopp');
+
+    btnScrollToTopp.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 500) {
+        btnScrollToTopp.classList.add("hide");
+      } else {
+        btnScrollToTopp.classList.remove("hide");
+      }
+    })
+  </script>
+  <!-- JS for scroll to top button end -->
+
+  <!--BUTTON QUICK CHAT-->
+  <button for="show" class="show-btnFunction btnChat js-btnChat">
+    <img src="/img/icon/mess.svg">
+  </button>
+
+  <div class="chatWrapper js-chatWrapper">
+    <div class="chat-header">
+      <h5>Let's chat? - Online</h5>
+      <img class="closechat close-chat js-close-chat" src="/img/icon/close.svg">
+    </div>
+
+    <p>Trò chuyện với Butter bằng cách điền thông tin vào mẫu dưới đây bạn nhé!</p>
+
+    <form>
+      <input type="text" placeholder="Tên của bạn..." required>
+      <input type="email" placeholder="Email của bạn..." required>
+      <input type="text" placeholder="Tin nhắn của bạn..." required>
+      <button>Gửi</button>
+    </form>
+
+    <footer>Powered by Butter</footer>
+
+  </div>
+  <!--BUTTON QUICK CHAT-->
+
+  <!-- JS for chat box start -->
+  <script>
+    const chatBox = document.querySelector('.js-chatWrapper')
+    const btnchat = document.querySelector('.js-btnChat')
+    const btnclose = document.querySelector('.js-close-chat')
+
+    function showChatBox() {
+      chatBox.classList.add('showChat');
+    }
+
+    function hideChatBox() {
+      chatBox.classList.remove('showChat');
+
+    }
+
+    btnchat.addEventListener('click', showChatBox);
+
+    btnclose.addEventListener('click', hideChatBox);
+  </script>
+  <!-- JS for chat box end-->
+
+  <!--Button make call-->
+  <a href="tel:19001211">
+    <button for="show" class="show-btnFunction btnPhone">
+      <i class="fas fa-phone"><img src="/img/icon/phone.svg"></i>
+    </button>
+  </a>
+  <!--Button make call-->
   
     
     <!--Start footer-->
