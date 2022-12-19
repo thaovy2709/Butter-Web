@@ -542,7 +542,7 @@ nav ul li a.active{
     margin-bottom:24px;
     margin-right: 100px;
     border-radius: 10px;
-    border: 0.5px solid var(--neutral-2);
+    border: 0.5px solid var(--neutral_2);
     background-color: var(--neutral_1);
     stroke: var(--neutral_3);
     cursor: pointer;
@@ -601,7 +601,7 @@ nav ul li a.active{
     margin-bottom:48px;
     margin-right: 100px;
     border-radius: 10px;
-    border: 0.5px solid var(--neutral-2);
+    border: 0.5px solid var(--neutral_2);
     background-color: var(--neutral_1);
     stroke: var(--neutral_3);
     cursor: pointer;
@@ -615,7 +615,7 @@ nav ul li a.active{
     margin-bottom:48px;
     margin-right: 100px;
     border-radius: 10px;
-    border: 0.5px solid var(--neutral-2);
+    border: 0.5px solid var(--neutral_2);
     background-color: var(--neutral_1);
     stroke: var(--neutral_3);
     cursor: pointer;

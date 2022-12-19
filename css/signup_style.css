@@ -29,8 +29,17 @@
     text-align: right;
     flex-grow: 1;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--primary_4);
+}
+
+.text-help a{
+    text-decoration: none;
+    color: var(--primary_4);
+}
+
+.text-help a:hover{
+    font-weight: 700;
 }
 
 /* Section: Signup */
