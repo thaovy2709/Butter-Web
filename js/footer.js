@@ -10,11 +10,11 @@ var pFooter = (function() {
           <h3 class="footer-title">VỀ BUTTER</h3>
           <hr class="footer-hr">
           <div class="footer-content">
-            <a class="footer-infor" href="">Câu chuyện thương hiệu</a> <br>
-            <a class="footer-infor" href="">Sứ mệnh Butter</a> <br>
-            <a class="footer-infor" href="">Khuyến mãi</a> <br>
-            <a class="footer-infor" href="">Sản phẩm Butter</a> <br>
-            <a class="footer-infor" href="">Cửa hàng</a> <br>
+            <a class="footer-infor" href="aboutus.html">Câu chuyện thương hiệu</a> <br>
+            <a class="footer-infor" href="aboutus.html">Sứ mệnh Butter</a> <br>
+            <a class="footer-infor" href="promotion.html">Khuyến mãi</a> <br>
+            <a class="footer-infor" href="productlist.html">Sản phẩm Butter</a> <br>
+            <a class="footer-infor" href="store.html">Cửa hàng</a> <br>
           </div>
         </div>
 

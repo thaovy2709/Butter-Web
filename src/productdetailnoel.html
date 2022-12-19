@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/css/productlistnoel_style.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <title>Khuyến mãi mùa noel</title>
+  <link rel="icon" type="image/x-icon" href="/img/webicon.png">
 
 </head>
 
@@ -45,7 +46,7 @@
         <span class="search_icon"><img src="/img/icon/Search.svg"></span>
       </div>
       <div class="link-btn">
-        <a href="checkout.html"><img src="/img/icon/Bag.svg"></a>
+        <a href="checkout.html"><img src="/img/icon/Bag.svg" id="cart"></a>
         <div class="notification"><a href="mynotification.html"><img src="/img/icon/Bell.svg"></a>
 
           <ul class="subnav">
@@ -316,7 +317,7 @@
                   </div>
                   
                   <div class="buttonBuy">
-                      <button class="addToCart" type="button">Thêm vào giỏ</button>
+                      <button id="addToCart" class="addToCart" type="button">Thêm vào giỏ</button>
                     <a href="checkout.html">
                       <button class="buyNow" type="button">Mua ngay</button>
                     </a>
@@ -436,7 +437,14 @@
         });
     });
 
+    //addtocart
+    const cart1 = document.getElementById('cart');
+const btnAddToCart = document.getElementById('addToCart');
+
+btnAddToCart.addEventListener('click', () => cart1.src = '/img/icon/cartwithquantity.svg')
+
 </script>
+
 
   </div>
   <div>
