@@ -21,13 +21,13 @@ if (locationPage.includes('butterid_cheese')) {
    if (localStorage.getItem('nextImage').includes('vani')) {
       const imageCheese = document.getElementsByClassName('butter_with_cheese')[0]
       const imageNoCheese = document.getElementsByClassName('butter_without_cheese')[0]
-      imageCheese.setAttribute('src', '../img/butterID/vanicheese.svg')
-      imageNoCheese.setAttribute('src', '../img/butterID/dipvani.svg')
+      imageCheese.setAttribute('src', '/img/ButterID/vanicheese.svg')
+      imageNoCheese.setAttribute('src', '/img/ButterID/dipvani.svg')
    } else {
       const imageCheese = document.getElementsByClassName('butter_with_cheese')[0]
       const imageNoCheese = document.getElementsByClassName('butter_without_cheese')[0]
-      imageCheese.setAttribute('src', '../img/butterID/chococheese.svg')
-      imageNoCheese.setAttribute('src', '../img/butterID/dipchoco.svg')
+      imageCheese.setAttribute('src', '/img/ButterID/chococheese.svg')
+      imageNoCheese.setAttribute('src', '/img/ButterID/dipchoco.svg')
    }
 }
 
